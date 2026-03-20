@@ -1,0 +1,177 @@
+<div id="loading" class="fadeInDiv"></div>
+<div id="myHDturn">
+	<progress value="0" max="100" class="loading-progress-bar"></progress>
+	<p class="loading-progress-text">Loading HD 0%</p>
+</div>
+<div id="contIntro" class="hidden" aria-hidden="true">
+	<img id="logoIntro" alt="Logotipo de la aplicación">
+
+	<div class="seccion-introductoria" id="seccIntro">
+
+		<div class="modal-intro">
+			<h2 idiomax="introTtl" id="introTtl"></h2>
+			<p idiomax="introPrf" id="textContIntro"></p>
+			<div id="myturn">
+				<span><span idiomax="loading" id="loading" class="display-contents">Cargando </span>0%</span>
+				<progress value="3" max="100"></progress>
+			</div>
+		</div>
+
+		<div class="desarrollado-por" aria-label="Créditos de desarrollo">
+			<div><span idiomax="devBy" id="devBy">Desarrollado por</span>&nbsp;</div>
+			<img src="skin/terre3.svg" alt="Logotipo Terre3">
+		</div>
+	</div>
+</div>
+
+<a id="logo-terre3-right-bottom" href="https://terre3.es" target="_blank"
+	title="Abrir sitio web de Terre3" aria-label="Abrir sitio web de Terre3 en una nueva pestaña">
+	<img src="skin/cornerTR3.svg" alt="logo-placeholder">
+</a>
+
+<p id="GPSaccuration" role="status" aria-live="polite"></p>
+
+<div id="groundModalWin" class="hidden" aria-hidden="true" style="display:none;"></div>
+<section id="contModalWin" class="hidden" aria-hidden="true" style="display:none;">
+	<article id="cardModalWin" aria-label="Ventana de información del recorrido">
+		<div id="card__title">
+			<img src="skin/icon-close.svg" alt="Cerrar ventana emergente"
+				title="Cerrar ventana"
+				role="button" tabindex="0" aria-label="Cerrar ventana"
+				onclick="closeContModalWin();">
+		</div>
+		<div id="card__body">
+		</div>
+	</article>
+</section>
+
+<div id="map" class="map" role="region" aria-label="Mapa 3D interactivo"></div>
+<div id="TR3" class="TR3" aria-hidden="true"></div>
+<div id="tools" class="tools" aria-hidden="true"></div>
+<div id="info" class="tools" aria-hidden="true"></div>
+
+<div id="progress"></div>
+
+<div class="botones-top-left">
+
+</div>
+
+<button type="button" id="buttonCright" class="fa-regular fa-copyright"
+	title="Información legal y créditos" aria-label="Abrir información legal y créditos" onclick="buttonCrightFn(this)"> </button>
+
+<div class="botones-top-right">
+
+		<button
+			type="button"
+			id="downTrack"
+			class="btn-circular ItemInactive"
+			title="Abrir información del recorrido">
+			<svg class="btn-icon" width="7" height="14" viewBox="0 0 7 14" fill="none"
+				xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+				<path d="M1.5 5.5H3.5V13M3.5 13H6M3.5 13H1M2.5 2V1H3.5V2H2.5Z"
+					stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+			</svg>
+			<span idiomax="downTrack">Información</span>
+		</button>
+
+	<div id="contNavIdiom" onclick="toggleContNavIdidm(this)" onmouseenter="showContNavIdiom(this)" onmouseleave="hideContNavIdiom(this)">
+		<button
+			type="button"
+			id="idiomBtn"
+			class="btn-circular ItemInactive"
+			title="Seleccionar idioma de la interfaz"
+			aria-label="Seleccionar idioma de la interfaz"
+			aria-haspopup="menu"
+			aria-expanded="false"
+			aria-controls="idiomMenu">
+			<svg class="btn-icon" width="20" height="20" viewBox="0 0 20 20" fill="none"
+				xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+				<path
+					d="M9.75 18.75C10.9319 18.75 12.1022 18.5172 13.1942 18.0649C14.2861 17.6126 15.2782 16.9497 16.114 16.114C16.9497 15.2782 17.6126 14.2861 18.0649 13.1942C18.5172 12.1022 18.75 10.9319 18.75 9.75C18.75 8.5681 18.5172 7.39778 18.0649 6.30585C17.6126 5.21392 16.9497 4.22177 16.114 3.38604C15.2782 2.55031 14.2861 1.88738 13.1942 1.43508C12.1022 0.982792 10.9319 0.75 9.75 0.75M9.75 18.75C8.5681 18.75 7.39778 18.5172 6.30585 18.0649C5.21392 17.6126 4.22177 16.9497 3.38604 16.114C2.55031 15.2782 1.88738 14.2861 1.43508 13.1942C0.982792 12.1022 0.75 10.9319 0.75 9.75C0.75 8.5681 0.982792 7.39778 1.43508 6.30585C1.88738 5.21392 2.55031 4.22177 3.38604 3.38604C4.22177 2.55031 5.21392 1.88738 6.30585 1.43508C7.39778 0.982792 8.5681 0.75 9.75 0.75M9.75 18.75C12.511 18.75 13.691 13.587 13.691 9.75C13.691 5.913 12.511 0.75 9.75 0.75M9.75 18.75C6.989 18.75 5.809 13.587 5.809 9.75C5.809 5.913 6.989 0.75 9.75 0.75M1.25 6.75H18.25M1.25 12.75H18.25"
+					stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+			</svg>
+			<span idiomax="idiomBtn">Idioma</span>
+			<svg class="idiom-dropdown" width="16" height="10" viewBox="0 0 16 10" fill="none"
+				xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+				<path d="M15.293 1.41406L14.5859 0.707031L8 7.29297L1.41406 0.707031L0.707031 1.41406L8 8.70703L15.293 1.41406Z"
+					fill="currentColor" stroke="currentColor" />
+			</svg>
+		</button>
+		<nav id="idiomMenu" aria-label="Seleccionar idioma">
+			<ul>
+				<li onclick="TR3cfg.idiomax.set('ES');">
+					<span class="idiomaxLI" lang="ES" idiomax="idiomBtnES">Español</span>
+				</li>
+				<li onclick="TR3cfg.idiomax.set('EN');">
+					<span class="idiomaxLI" lang="EN" idiomax="idiomBtnEN">Inglés</span>
+				</li>
+				<li onclick="TR3cfg.idiomax.set('FR');">
+					<span class="idiomaxLI" lang="FR" idiomax="idiomBtnFR">Francés</span>
+				</li>
+				<li onclick="TR3cfg.idiomax.set('PT');">
+					<span class="idiomaxLI" lang="PT" idiomax="idiomBtnPT">Portugués</span>
+				</li>
+			</ul>
+		</nav>
+	</div>
+
+</div>
+
+<div class="botones-down-right">
+
+	<button type="button" id="globalView" class="btn-circular ItemInactive" title="Centrar mapa"
+		aria-label="Centrar vista del mapa" onclick="lookAtInitial();">
+		<svg class="btn-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+			xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+			<path d="M12 18.5L9 17M9 17L3 20V7L9 4M9 17V4M9 4L15 7M15 7L21 4V12.5M15 7V14.5"
+				stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+			<path
+				d="M20.5 15L21.3625 15.8625L20.2787 16.9388L20.8112 17.4713L21.8875 16.3875L22.75 17.25V15H20.5ZM16 17.25L16.8625 16.3875L17.9388 17.4713L18.4713 16.9388L17.3875 15.8625L18.25 15H16V17.25ZM18.25 21.75L17.3875 20.8875L18.4713 19.8112L17.9388 19.2787L16.8625 20.3625L16 19.5V21.75H18.25ZM22.75 19.5L21.8875 20.3625L20.8112 19.2787L20.2787 19.8112L21.3625 20.8875L20.5 21.75H22.75V19.5Z"
+				fill="currentColor" />
+		</svg>
+		<span idiomax="globalView">Centrar</span>
+	</button>
+
+	<button type="button" id="geoloc" class="btn-circular ItemInactive" title="Geolocalización"
+		aria-label="Ir a mi ubicación">
+		<svg class="btn-icon" width="21" height="21" viewBox="0 0 21 21" fill="none"
+			xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+			<path
+				d="M10.2 0C10.8637 0 11.4 0.53625 11.4 1.2V1.88625C15.0787 2.41125 17.9887 5.32125 18.5138 9H19.2C19.8637 9 20.4 9.53625 20.4 10.2C20.4 10.8637 19.8637 11.4 19.2 11.4H18.5138C17.9887 15.0787 15.0787 17.9887 11.4 18.5138V19.2C11.4 19.8637 10.8637 20.4 10.2 20.4C9.53625 20.4 9 19.8637 9 19.2V18.5138C5.32125 17.9887 2.41125 15.0787 1.88625 11.4H1.2C0.53625 11.4 0 10.8637 0 10.2C0 9.53625 0.53625 9 1.2 9H1.88625C2.41125 5.32125 5.32125 2.41125 9 1.88625V1.2C9 0.53625 9.53625 0 10.2 0ZM4.2 10.2C4.2 13.515 6.885 16.2 10.2 16.2C13.515 16.2 16.2 13.515 16.2 10.2C16.2 6.885 13.515 4.2 10.2 4.2C6.885 4.2 4.2 6.885 4.2 10.2ZM10.2 6.6C12.1875 6.6 13.8 8.2125 13.8 10.2C13.8 12.1875 12.1875 13.8 10.2 13.8C8.2125 13.8 6.6 12.1875 6.6 10.2C6.6 8.2125 8.2125 6.6 10.2 6.6Z"
+				fill="currentColor" />
+		</svg>
+	</button>
+
+	<button type="button" id="toggleViewUI" class="btn-circular ItemInactive" title="Mostrar u ocultar controles"
+		aria-label="Mostrar u ocultar controles de la interfaz" onclick="toggleViewUI();">
+		<svg class="btn-icon" width="22" height="15" viewBox="0 0 22 15" fill="none"
+			xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+			<path
+				d="M11 4.5C11.7956 4.5 12.5587 4.81607 13.1213 5.37868C13.6839 5.94129 14 6.70435 14 7.5C14 8.29565 13.6839 9.05871 13.1213 9.62132C12.5587 10.1839 11.7956 10.5 11 10.5C10.2044 10.5 9.44129 10.1839 8.87868 9.62132C8.31607 9.05871 8 8.29565 8 7.5C8 6.70435 8.31607 5.94129 8.87868 5.37868C9.44129 4.81607 10.2044 4.5 11 4.5ZM11 0C16 0 20.27 3.11 22 7.5C20.27 11.89 16 15 11 15C6 15 1.73 11.89 0 7.5C1.73 3.11 6 0 11 0ZM2.18 7.5C2.98825 9.15031 4.24331 10.5407 5.80248 11.5133C7.36165 12.4858 9.1624 13.0013 11 13.0013C12.8376 13.0013 14.6383 12.4858 16.1975 11.5133C17.7567 10.5407 19.0117 9.15031 19.82 7.5C19.0117 5.84969 17.7567 4.45925 16.1975 3.48675C14.6383 2.51424 12.8376 1.99868 11 1.99868C9.1624 1.99868 7.36165 2.51424 5.80248 3.48675C4.24331 4.45925 2.98825 5.84969 2.18 7.5Z"
+				fill="currentColor" />
+		</svg>
+	</button>
+
+</div>
+
+<div class="botones-down-zoom">
+
+	<button type="button" id="zoom+" class="btn-circular ItemInactive" title="Acercar zoom"
+		aria-label="Acercar zoom" onclick="moveForward(1);">
+		<svg class="btn-icon" width="14" height="14" viewBox="0 0 14 14" fill="none"
+			xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+			<path d="M7.5 0.5V6.5H13.5V7.5H7.5V13.5H6.5V7.5H0.5V6.5H6.5V0.5H7.5Z"
+				fill="currentColor" stroke="currentColor" />
+		</svg>
+	</button>
+
+	<button type="button" id="zoom-" class="btn-circular ItemInactive" title="Alejar zoom"
+		aria-label="Alejar zoom" onclick="moveForward(-1);">
+		<svg class="btn-icon" width="14" height="2" viewBox="0 0 14 2" fill="none"
+			xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+			<path d="M14 2H0V0H14V2Z" fill="currentColor" />
+		</svg>
+	</button>
+
+</div>
+<!--ACTIVE BUTTONS-->

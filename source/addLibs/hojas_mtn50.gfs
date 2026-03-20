@@ -1,0 +1,29 @@
+<GMLFeatureClassList>
+  <GMLFeatureClass>
+    <Name>Malla50</Name>
+    <ElementPath>Malla50</ElementPath>
+    <GeometryType>100</GeometryType>
+    <SRSName>EPSG:4258</SRSName>
+    <DatasetSpecificInfo>
+      <FeatureCount>1115</FeatureCount>
+    </DatasetSpecificInfo>
+    <PropertyDefn>
+      <Name>numero_hoja</Name>
+      <ElementPath>numero_hoja</ElementPath>
+      <Type>String</Type>
+      <Width>9</Width>
+    </PropertyDefn>
+    <PropertyDefn>
+      <Name>nombre</Name>
+      <ElementPath>nombre</ElementPath>
+      <Type>String</Type>
+      <Width>46</Width>
+    </PropertyDefn>
+    <PropertyDefn>
+      <Name>CCFF50</Name>
+      <ElementPath>CCFF50</ElementPath>
+      <Type>String</Type>
+      <Width>5</Width>
+    </PropertyDefn>
+  </GMLFeatureClass>
+</GMLFeatureClassList>

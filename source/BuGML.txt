@@ -1,0 +1,722 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--Edificios de la D.G. del Catastro.-->
+<gml:FeatureCollection gml:id="ES.SDGC.BU"  xmlns:ad="urn:x-inspire:specification:gmlas:Addresses:3.0" xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2" xmlns:bu-base="http://inspire.jrc.ec.europa.eu/schemas/bu-base/3.0" xmlns:bu-core2d="http://inspire.jrc.ec.europa.eu/schemas/bu-core2d/2.0" xmlns:bu-ext2d="http://inspire.jrc.ec.europa.eu/schemas/bu-ext2d/2.0" xmlns:cp="urn:x-inspire:specification:gmlas:CadastralParcels:3.0" xmlns:el-bas="http://inspire.jrc.ec.europa.eu/schemas/el-bas/2.0" xmlns:el-cov="http://inspire.jrc.ec.europa.eu/schemas/el-cov/2.0" xmlns:el-tin="http://inspire.jrc.ec.europa.eu/schemas/el-tin/2.0" xmlns:el-vec="http://inspire.jrc.ec.europa.eu/schemas/el-vec/2.0" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:gmlcov="http://www.opengis.net/gmlcov/1.0" xmlns:gn="urn:x-inspire:specification:gmlas:GeographicalNames:3.0" xmlns:gsr="http://www.isotc211.org/2005/gsr" xmlns:gss="http://www.isotc211.org/2005/gss" xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:swe="http://www.opengis.net/swe/2.0" xmlns:xlink="http://www.w3.org/1999/xlink"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://inspire.jrc.ec.europa.eu/schemas/bu-ext2d/2.0 http://inspire.ec.europa.eu/draft-schemas/bu-ext2d/2.0/BuildingExtended2D.xsd">
+  <gml:featureMember>
+    <bu-ext2d:BuildingPart gml:id="ES.SDGC.BU.Q10110900TP80G_part2">
+      <bu-core2d:beginLifespanVersion>2015-09-07T00:00:00</bu-core2d:beginLifespanVersion>
+      <bu-core2d:conditionOfConstruction xsi:nil="true" nilReason="other:unpopulated"></bu-core2d:conditionOfConstruction>
+      <bu-core2d:inspireId>
+        <base:Identifier>
+          <base:localId>Q10110900TP80G_part2</base:localId>
+          <base:namespace>ES.SDGC.BU</base:namespace>
+        </base:Identifier>
+      </bu-core2d:inspireId>
+      <bu-core2d:addresses xlink:href="http://ovc.catastro.meh.es/INSPIRE/wfsAD.aspx?service=wfs&amp;version=2&amp;request=GetFeature&amp;STOREDQUERIE_ID=GetadByRefcat&amp;refcat=Q10110900TP80G&amp;srsname=EPSG::3857"></bu-core2d:addresses>
+      <bu-core2d:cadastralParcels xlink:href="http://ovc.catastro.meh.es/INSPIRE/wfsCP.aspx?service=wfs&amp;version=2&amp;request=GetFeature&amp;STOREDQUERIE_ID=GetParcel&amp;refcat=Q10110900TP80G&amp;srsname=EPSG::3857"></bu-core2d:cadastralParcels>
+      <bu-ext2d:geometry>
+       <bu-core2d:BuildingGeometry>
+        <bu-core2d:geometry>
+         <gml:Surface gml:id="Surface_ES.SDGC.BU.Q10110900TP80G_part2" srsName="urn:ogc:def:crs:EPSG::3857">
+           <gml:patches>
+              <gml:PolygonPatch>
+                <gml:exterior>
+                    <gml:LinearRing>
+                      <gml:posList srsDimension="2" count="45"> -639433.44 5369687.65 -639429.22 5369690.14 -639429.75 5369695.03 -639421.57 5369699.84 -639421.66 5369706.23 -639427.19 5369710.72 -639425.76 5369719.87 -639416.96 5369724.45 -639411.83 5369720.94 -639406.01 5369723.39 -639401.26 5369719.07 -639400.47 5369721.66 -639399.29 5369723.84 -639393 5369723.48 -639392.43 5369720.55 -639387.91 5369720.19 -639384.72 5369716.11 -639388.09 5369710.47 -639386.32 5369709.04 -639386.53 5369699.82 -639379.92 5369696.34 -639379.22 5369686.04 -639385.01 5369682.9 -639391.95 5369687.04 -639397.63 5369684.09 -639397.67 5369676.91 -639393.01 5369673.33 -639386.1 5369675 -639382.24 5369673.03 -639383.62 5369662.29 -639390.37 5369659 -639393.66 5369650.78 -639390.65 5369644.36 -639402.29 5369632.83 -639405.47 5369640.6 -639415.7 5369642.48 -639417.22 5369642.79 -639425.76 5369638.81 -639432.48 5369645.76 -639432.48 5369653.76 -639424.78 5369658.31 -639424.96 5369663.71 -639433.48 5369669.46 -639433.47 5369672.55 -639433.44 5369687.65</gml:posList>
+                    </gml:LinearRing>
+                </gml:exterior>
+              </gml:PolygonPatch>
+           </gml:patches>
+         </gml:Surface>
+        </bu-core2d:geometry>
+ 	      <bu-core2d:horizontalGeometryEstimatedAccuracy uom="m">0.1</bu-core2d:horizontalGeometryEstimatedAccuracy>
+ 	      <bu-core2d:horizontalGeometryReference>footPrint</bu-core2d:horizontalGeometryReference>
+ 	      <bu-core2d:referenceGeometry>true</bu-core2d:referenceGeometry>
+       </bu-core2d:BuildingGeometry>
+      </bu-ext2d:geometry>
+      <bu-ext2d:numberOfFloorsAboveGround>1</bu-ext2d:numberOfFloorsAboveGround>
+      <bu-ext2d:heightBelowGround uom="m">0</bu-ext2d:heightBelowGround>
+      <bu-ext2d:numberOfFloorsBelowGround>0</bu-ext2d:numberOfFloorsBelowGround>
+    </bu-ext2d:BuildingPart>
+  </gml:featureMember>
+  <gml:featureMember>
+    <bu-ext2d:BuildingPart gml:id="ES.SDGC.BU.Q10110900TP80G_part3">
+      <bu-core2d:beginLifespanVersion>2015-09-07T00:00:00</bu-core2d:beginLifespanVersion>
+      <bu-core2d:conditionOfConstruction xsi:nil="true" nilReason="other:unpopulated"></bu-core2d:conditionOfConstruction>
+      <bu-core2d:inspireId>
+        <base:Identifier>
+          <base:localId>Q10110900TP80G_part3</base:localId>
+          <base:namespace>ES.SDGC.BU</base:namespace>
+        </base:Identifier>
+      </bu-core2d:inspireId>
+      <bu-core2d:addresses xlink:href="http://ovc.catastro.meh.es/INSPIRE/wfsAD.aspx?service=wfs&amp;version=2&amp;request=GetFeature&amp;STOREDQUERIE_ID=GetadByRefcat&amp;refcat=Q10110900TP80G&amp;srsname=EPSG::3857"></bu-core2d:addresses>
+      <bu-core2d:cadastralParcels xlink:href="http://ovc.catastro.meh.es/INSPIRE/wfsCP.aspx?service=wfs&amp;version=2&amp;request=GetFeature&amp;STOREDQUERIE_ID=GetParcel&amp;refcat=Q10110900TP80G&amp;srsname=EPSG::3857"></bu-core2d:cadastralParcels>
+      <bu-ext2d:geometry>
+       <bu-core2d:BuildingGeometry>
+        <bu-core2d:geometry>
+         <gml:Surface gml:id="Surface_ES.SDGC.BU.Q10110900TP80G_part3" srsName="urn:ogc:def:crs:EPSG::3857">
+           <gml:patches>
+              <gml:PolygonPatch>
+                <gml:exterior>
+                    <gml:LinearRing>
+                      <gml:posList srsDimension="2" count="7"> -639384.48 5369548.23 -639387.3 5369498.27 -639444.07 5369501.5 -639446.26 5369501.62 -639443.26 5369554.76 -639384.3 5369551.41 -639384.48 5369548.23</gml:posList>
+                    </gml:LinearRing>
+                </gml:exterior>
+              </gml:PolygonPatch>
+           </gml:patches>
+         </gml:Surface>
+        </bu-core2d:geometry>
+ 	      <bu-core2d:horizontalGeometryEstimatedAccuracy uom="m">0.1</bu-core2d:horizontalGeometryEstimatedAccuracy>
+ 	      <bu-core2d:horizontalGeometryReference>footPrint</bu-core2d:horizontalGeometryReference>
+ 	      <bu-core2d:referenceGeometry>true</bu-core2d:referenceGeometry>
+       </bu-core2d:BuildingGeometry>
+      </bu-ext2d:geometry>
+      <bu-ext2d:numberOfFloorsAboveGround>1</bu-ext2d:numberOfFloorsAboveGround>
+      <bu-ext2d:heightBelowGround uom="m">0</bu-ext2d:heightBelowGround>
+      <bu-ext2d:numberOfFloorsBelowGround>0</bu-ext2d:numberOfFloorsBelowGround>
+    </bu-ext2d:BuildingPart>
+  </gml:featureMember>
+  <gml:featureMember>
+    <bu-ext2d:BuildingPart gml:id="ES.SDGC.BU.Q10110900TP80G_part4">
+      <bu-core2d:beginLifespanVersion>2015-09-07T00:00:00</bu-core2d:beginLifespanVersion>
+      <bu-core2d:conditionOfConstruction xsi:nil="true" nilReason="other:unpopulated"></bu-core2d:conditionOfConstruction>
+      <bu-core2d:inspireId>
+        <base:Identifier>
+          <base:localId>Q10110900TP80G_part4</base:localId>
+          <base:namespace>ES.SDGC.BU</base:namespace>
+        </base:Identifier>
+      </bu-core2d:inspireId>
+      <bu-core2d:addresses xlink:href="http://ovc.catastro.meh.es/INSPIRE/wfsAD.aspx?service=wfs&amp;version=2&amp;request=GetFeature&amp;STOREDQUERIE_ID=GetadByRefcat&amp;refcat=Q10110900TP80G&amp;srsname=EPSG::3857"></bu-core2d:addresses>
+      <bu-core2d:cadastralParcels xlink:href="http://ovc.catastro.meh.es/INSPIRE/wfsCP.aspx?service=wfs&amp;version=2&amp;request=GetFeature&amp;STOREDQUERIE_ID=GetParcel&amp;refcat=Q10110900TP80G&amp;srsname=EPSG::3857"></bu-core2d:cadastralParcels>
+      <bu-ext2d:geometry>
+       <bu-core2d:BuildingGeometry>
+        <bu-core2d:geometry>
+         <gml:Surface gml:id="Surface_ES.SDGC.BU.Q10110900TP80G_part4" srsName="urn:ogc:def:crs:EPSG::3857">
+           <gml:patches>
+              <gml:PolygonPatch>
+                <gml:exterior>
+                    <gml:LinearRing>
+                      <gml:posList srsDimension="2" count="7"> -639381.12 5369555.07 -639414.66 5369556.93 -639422.89 5369557.38 -639421.8 5369577.33 -639413.57 5369576.88 -639380.02 5369575.03 -639381.12 5369555.07</gml:posList>
+                    </gml:LinearRing>
+                </gml:exterior>
+              </gml:PolygonPatch>
+           </gml:patches>
+         </gml:Surface>
+        </bu-core2d:geometry>
+ 	      <bu-core2d:horizontalGeometryEstimatedAccuracy uom="m">0.1</bu-core2d:horizontalGeometryEstimatedAccuracy>
+ 	      <bu-core2d:horizontalGeometryReference>footPrint</bu-core2d:horizontalGeometryReference>
+ 	      <bu-core2d:referenceGeometry>true</bu-core2d:referenceGeometry>
+       </bu-core2d:BuildingGeometry>
+      </bu-ext2d:geometry>
+      <bu-ext2d:numberOfFloorsAboveGround>1</bu-ext2d:numberOfFloorsAboveGround>
+      <bu-ext2d:heightBelowGround uom="m">0</bu-ext2d:heightBelowGround>
+      <bu-ext2d:numberOfFloorsBelowGround>0</bu-ext2d:numberOfFloorsBelowGround>
+    </bu-ext2d:BuildingPart>
+  </gml:featureMember>
+  <gml:featureMember>
+    <bu-ext2d:BuildingPart gml:id="ES.SDGC.BU.Q10110900TP80G_part5">
+      <bu-core2d:beginLifespanVersion>2015-09-07T00:00:00</bu-core2d:beginLifespanVersion>
+      <bu-core2d:conditionOfConstruction xsi:nil="true" nilReason="other:unpopulated"></bu-core2d:conditionOfConstruction>
+      <bu-core2d:inspireId>
+        <base:Identifier>
+          <base:localId>Q10110900TP80G_part5</base:localId>
+          <base:namespace>ES.SDGC.BU</base:namespace>
+        </base:Identifier>
+      </bu-core2d:inspireId>
+      <bu-core2d:addresses xlink:href="http://ovc.catastro.meh.es/INSPIRE/wfsAD.aspx?service=wfs&amp;version=2&amp;request=GetFeature&amp;STOREDQUERIE_ID=GetadByRefcat&amp;refcat=Q10110900TP80G&amp;srsname=EPSG::3857"></bu-core2d:addresses>
+      <bu-core2d:cadastralParcels xlink:href="http://ovc.catastro.meh.es/INSPIRE/wfsCP.aspx?service=wfs&amp;version=2&amp;request=GetFeature&amp;STOREDQUERIE_ID=GetParcel&amp;refcat=Q10110900TP80G&amp;srsname=EPSG::3857"></bu-core2d:cadastralParcels>
+      <bu-ext2d:geometry>
+       <bu-core2d:BuildingGeometry>
+        <bu-core2d:geometry>
+         <gml:Surface gml:id="Surface_ES.SDGC.BU.Q10110900TP80G_part5" srsName="urn:ogc:def:crs:EPSG::3857">
+           <gml:patches>
+              <gml:PolygonPatch>
+                <gml:exterior>
+                    <gml:LinearRing>
+                      <gml:posList srsDimension="2" count="9"> -639380.02 5369575.03 -639379.56 5369575 -639379.49 5369575 -639374.33 5369574.71 -639375.43 5369554.76 -639380.59 5369555.04 -639380.66 5369555.05 -639381.12 5369555.07 -639380.02 5369575.03</gml:posList>
+                    </gml:LinearRing>
+                </gml:exterior>
+              </gml:PolygonPatch>
+           </gml:patches>
+         </gml:Surface>
+        </bu-core2d:geometry>
+ 	      <bu-core2d:horizontalGeometryEstimatedAccuracy uom="m">0.1</bu-core2d:horizontalGeometryEstimatedAccuracy>
+ 	      <bu-core2d:horizontalGeometryReference>footPrint</bu-core2d:horizontalGeometryReference>
+ 	      <bu-core2d:referenceGeometry>true</bu-core2d:referenceGeometry>
+       </bu-core2d:BuildingGeometry>
+      </bu-ext2d:geometry>
+      <bu-ext2d:numberOfFloorsAboveGround>1</bu-ext2d:numberOfFloorsAboveGround>
+      <bu-ext2d:heightBelowGround uom="m">3</bu-ext2d:heightBelowGround>
+      <bu-ext2d:numberOfFloorsBelowGround>1</bu-ext2d:numberOfFloorsBelowGround>
+    </bu-ext2d:BuildingPart>
+  </gml:featureMember>
+  <gml:featureMember>
+    <bu-ext2d:BuildingPart gml:id="ES.SDGC.BU.Q10110900TP80G_part6">
+      <bu-core2d:beginLifespanVersion>2015-09-07T00:00:00</bu-core2d:beginLifespanVersion>
+      <bu-core2d:conditionOfConstruction xsi:nil="true" nilReason="other:unpopulated"></bu-core2d:conditionOfConstruction>
+      <bu-core2d:inspireId>
+        <base:Identifier>
+          <base:localId>Q10110900TP80G_part6</base:localId>
+          <base:namespace>ES.SDGC.BU</base:namespace>
+        </base:Identifier>
+      </bu-core2d:inspireId>
+      <bu-core2d:addresses xlink:href="http://ovc.catastro.meh.es/INSPIRE/wfsAD.aspx?service=wfs&amp;version=2&amp;request=GetFeature&amp;STOREDQUERIE_ID=GetadByRefcat&amp;refcat=Q10110900TP80G&amp;srsname=EPSG::3857"></bu-core2d:addresses>
+      <bu-core2d:cadastralParcels xlink:href="http://ovc.catastro.meh.es/INSPIRE/wfsCP.aspx?service=wfs&amp;version=2&amp;request=GetFeature&amp;STOREDQUERIE_ID=GetParcel&amp;refcat=Q10110900TP80G&amp;srsname=EPSG::3857"></bu-core2d:cadastralParcels>
+      <bu-ext2d:geometry>
+       <bu-core2d:BuildingGeometry>
+        <bu-core2d:geometry>
+         <gml:Surface gml:id="Surface_ES.SDGC.BU.Q10110900TP80G_part6" srsName="urn:ogc:def:crs:EPSG::3857">
+           <gml:patches>
+              <gml:PolygonPatch>
+                <gml:exterior>
+                    <gml:LinearRing>
+                      <gml:posList srsDimension="2" count="75"> -639276.75 5369561.96 -639276.63 5369568.09 -639271.27 5369571.04 -639266.05 5369567.87 -639266.18 5369561.75 -639260.95 5369558.57 -639261.08 5369552.44 -639266.42 5369549.49 -639266.55 5369543.37 -639261.32 5369540.19 -639261.45 5369534.08 -639266.8 5369531.11 -639266.93 5369524.99 -639272.27 5369522.04 -639272.4 5369515.91 -639267.17 5369512.73 -639267.3 5369506.61 -639272.66 5369503.66 -639277.87 5369506.82 -639283.22 5369503.87 -639288.45 5369507.05 -639294.21 5369503.86 -639294.67 5369499.43 -639299.21 5369497.01 -639304.44 5369500.19 -639309.78 5369497.22 -639315.01 5369500.4 -639320.22 5369497.53 -639324.53 5369500.05 -639324.69 5369504.72 -639329.92 5369507.9 -639335.68 5369504.72 -639341.32 5369508.13 -639346.66 5369505.18 -639351.89 5369508.35 -639351.76 5369514.48 -639346.42 5369517.44 -639346.29 5369523.57 -639351.5 5369526.73 -639351.39 5369532.86 -639356.6 5369536.04 -639356.49 5369542.15 -639351.13 5369545.11 -639351.02 5369551.24 -639356.23 5369554.4 -639356.1 5369560.53 -639350.76 5369563.49 -639350.63 5369569.62 -639345.28 5369572.57 -639340.06 5369569.4 -639340.18 5369563.27 -639344.43 5369560.36 -639344.57 5369554.24 -639339.37 5369551.04 -639339.51 5369544.91 -639335.34 5369541.72 -639335.46 5369535.59 -639330.24 5369532.42 -639324.9 5369535.37 -639319.67 5369532.21 -639319.8 5369526.08 -639314.57 5369522.9 -639309.22 5369525.86 -639303.99 5369522.69 -639298.65 5369525.65 -639298.52 5369531.76 -639293.17 5369534.72 -639287.95 5369531.55 -639282.6 5369534.51 -639282.47 5369540.63 -639278.17 5369543.66 -639278.07 5369549.78 -639272.74 5369552.75 -639272.64 5369558.89 -639276.75 5369561.96</gml:posList>
+                    </gml:LinearRing>
+                </gml:exterior>
+              </gml:PolygonPatch>
+           </gml:patches>
+         </gml:Surface>
+        </bu-core2d:geometry>
+ 	      <bu-core2d:horizontalGeometryEstimatedAccuracy uom="m">0.1</bu-core2d:horizontalGeometryEstimatedAccuracy>
+ 	      <bu-core2d:horizontalGeometryReference>footPrint</bu-core2d:horizontalGeometryReference>
+ 	      <bu-core2d:referenceGeometry>true</bu-core2d:referenceGeometry>
+       </bu-core2d:BuildingGeometry>
+      </bu-ext2d:geometry>
+      <bu-ext2d:numberOfFloorsAboveGround>1</bu-ext2d:numberOfFloorsAboveGround>
+      <bu-ext2d:heightBelowGround uom="m">0</bu-ext2d:heightBelowGround>
+      <bu-ext2d:numberOfFloorsBelowGround>0</bu-ext2d:numberOfFloorsBelowGround>
+    </bu-ext2d:BuildingPart>
+  </gml:featureMember>
+  <gml:featureMember>
+    <bu-ext2d:BuildingPart gml:id="ES.SDGC.BU.Q10110900TP80G_part7">
+      <bu-core2d:beginLifespanVersion>2015-09-07T00:00:00</bu-core2d:beginLifespanVersion>
+      <bu-core2d:conditionOfConstruction xsi:nil="true" nilReason="other:unpopulated"></bu-core2d:conditionOfConstruction>
+      <bu-core2d:inspireId>
+        <base:Identifier>
+          <base:localId>Q10110900TP80G_part7</base:localId>
+          <base:namespace>ES.SDGC.BU</base:namespace>
+        </base:Identifier>
+      </bu-core2d:inspireId>
+      <bu-core2d:addresses xlink:href="http://ovc.catastro.meh.es/INSPIRE/wfsAD.aspx?service=wfs&amp;version=2&amp;request=GetFeature&amp;STOREDQUERIE_ID=GetadByRefcat&amp;refcat=Q10110900TP80G&amp;srsname=EPSG::3857"></bu-core2d:addresses>
+      <bu-core2d:cadastralParcels xlink:href="http://ovc.catastro.meh.es/INSPIRE/wfsCP.aspx?service=wfs&amp;version=2&amp;request=GetFeature&amp;STOREDQUERIE_ID=GetParcel&amp;refcat=Q10110900TP80G&amp;srsname=EPSG::3857"></bu-core2d:cadastralParcels>
+      <bu-ext2d:geometry>
+       <bu-core2d:BuildingGeometry>
+        <bu-core2d:geometry>
+         <gml:Surface gml:id="Surface_ES.SDGC.BU.Q10110900TP80G_part7" srsName="urn:ogc:def:crs:EPSG::3857">
+           <gml:patches>
+              <gml:PolygonPatch>
+                <gml:exterior>
+                    <gml:LinearRing>
+                      <gml:posList srsDimension="2" count="17"> -639335.34 5369541.72 -639339.51 5369544.91 -639339.37 5369551.04 -639344.57 5369554.24 -639344.43 5369560.36 -639340.18 5369563.27 -639334.97 5369560.1 -639329.61 5369563.06 -639329.48 5369569.17 -639324.14 5369572.13 -639318.92 5369568.95 -639319.04 5369562.83 -639324.39 5369559.88 -639324.51 5369553.75 -639329.87 5369550.8 -639329.98 5369544.68 -639335.34 5369541.72</gml:posList>
+                    </gml:LinearRing>
+                </gml:exterior>
+              </gml:PolygonPatch>
+           </gml:patches>
+         </gml:Surface>
+        </bu-core2d:geometry>
+ 	      <bu-core2d:horizontalGeometryEstimatedAccuracy uom="m">0.1</bu-core2d:horizontalGeometryEstimatedAccuracy>
+ 	      <bu-core2d:horizontalGeometryReference>footPrint</bu-core2d:horizontalGeometryReference>
+ 	      <bu-core2d:referenceGeometry>true</bu-core2d:referenceGeometry>
+       </bu-core2d:BuildingGeometry>
+      </bu-ext2d:geometry>
+      <bu-ext2d:numberOfFloorsAboveGround>2</bu-ext2d:numberOfFloorsAboveGround>
+      <bu-ext2d:heightBelowGround uom="m">0</bu-ext2d:heightBelowGround>
+      <bu-ext2d:numberOfFloorsBelowGround>0</bu-ext2d:numberOfFloorsBelowGround>
+    </bu-ext2d:BuildingPart>
+  </gml:featureMember>
+  <gml:featureMember>
+    <bu-ext2d:BuildingPart gml:id="ES.SDGC.BU.Q10110900TP80G_part8">
+      <bu-core2d:beginLifespanVersion>2015-09-07T00:00:00</bu-core2d:beginLifespanVersion>
+      <bu-core2d:conditionOfConstruction xsi:nil="true" nilReason="other:unpopulated"></bu-core2d:conditionOfConstruction>
+      <bu-core2d:inspireId>
+        <base:Identifier>
+          <base:localId>Q10110900TP80G_part8</base:localId>
+          <base:namespace>ES.SDGC.BU</base:namespace>
+        </base:Identifier>
+      </bu-core2d:inspireId>
+      <bu-core2d:addresses xlink:href="http://ovc.catastro.meh.es/INSPIRE/wfsAD.aspx?service=wfs&amp;version=2&amp;request=GetFeature&amp;STOREDQUERIE_ID=GetadByRefcat&amp;refcat=Q10110900TP80G&amp;srsname=EPSG::3857"></bu-core2d:addresses>
+      <bu-core2d:cadastralParcels xlink:href="http://ovc.catastro.meh.es/INSPIRE/wfsCP.aspx?service=wfs&amp;version=2&amp;request=GetFeature&amp;STOREDQUERIE_ID=GetParcel&amp;refcat=Q10110900TP80G&amp;srsname=EPSG::3857"></bu-core2d:cadastralParcels>
+      <bu-ext2d:geometry>
+       <bu-core2d:BuildingGeometry>
+        <bu-core2d:geometry>
+         <gml:Surface gml:id="Surface_ES.SDGC.BU.Q10110900TP80G_part8" srsName="urn:ogc:def:crs:EPSG::3857">
+           <gml:patches>
+              <gml:PolygonPatch>
+                <gml:exterior>
+                    <gml:LinearRing>
+                      <gml:posList srsDimension="2" count="17"> -639282.47 5369540.63 -639287.7 5369543.8 -639287.57 5369549.93 -639292.8 5369553.1 -639292.67 5369559.23 -639297.89 5369562.4 -639297.77 5369568.52 -639292.42 5369571.48 -639287.2 5369568.31 -639287.31 5369562.18 -639282.1 5369559.01 -639276.75 5369561.96 -639272.64 5369558.89 -639272.74 5369552.75 -639278.07 5369549.78 -639278.17 5369543.66 -639282.47 5369540.63</gml:posList>
+                    </gml:LinearRing>
+                </gml:exterior>
+              </gml:PolygonPatch>
+           </gml:patches>
+         </gml:Surface>
+        </bu-core2d:geometry>
+ 	      <bu-core2d:horizontalGeometryEstimatedAccuracy uom="m">0.1</bu-core2d:horizontalGeometryEstimatedAccuracy>
+ 	      <bu-core2d:horizontalGeometryReference>footPrint</bu-core2d:horizontalGeometryReference>
+ 	      <bu-core2d:referenceGeometry>true</bu-core2d:referenceGeometry>
+       </bu-core2d:BuildingGeometry>
+      </bu-ext2d:geometry>
+      <bu-ext2d:numberOfFloorsAboveGround>2</bu-ext2d:numberOfFloorsAboveGround>
+      <bu-ext2d:heightBelowGround uom="m">0</bu-ext2d:heightBelowGround>
+      <bu-ext2d:numberOfFloorsBelowGround>0</bu-ext2d:numberOfFloorsBelowGround>
+    </bu-ext2d:BuildingPart>
+  </gml:featureMember>
+  <gml:featureMember>
+    <bu-ext2d:BuildingPart gml:id="ES.SDGC.BU.Q10110900TP80G_part9">
+      <bu-core2d:beginLifespanVersion>2015-09-07T00:00:00</bu-core2d:beginLifespanVersion>
+      <bu-core2d:conditionOfConstruction xsi:nil="true" nilReason="other:unpopulated"></bu-core2d:conditionOfConstruction>
+      <bu-core2d:inspireId>
+        <base:Identifier>
+          <base:localId>Q10110900TP80G_part9</base:localId>
+          <base:namespace>ES.SDGC.BU</base:namespace>
+        </base:Identifier>
+      </bu-core2d:inspireId>
+      <bu-core2d:addresses xlink:href="http://ovc.catastro.meh.es/INSPIRE/wfsAD.aspx?service=wfs&amp;version=2&amp;request=GetFeature&amp;STOREDQUERIE_ID=GetadByRefcat&amp;refcat=Q10110900TP80G&amp;srsname=EPSG::3857"></bu-core2d:addresses>
+      <bu-core2d:cadastralParcels xlink:href="http://ovc.catastro.meh.es/INSPIRE/wfsCP.aspx?service=wfs&amp;version=2&amp;request=GetFeature&amp;STOREDQUERIE_ID=GetParcel&amp;refcat=Q10110900TP80G&amp;srsname=EPSG::3857"></bu-core2d:cadastralParcels>
+      <bu-ext2d:geometry>
+       <bu-core2d:BuildingGeometry>
+        <bu-core2d:geometry>
+         <gml:Surface gml:id="Surface_ES.SDGC.BU.Q10110900TP80G_part9" srsName="urn:ogc:def:crs:EPSG::3857">
+           <gml:patches>
+              <gml:PolygonPatch>
+                <gml:exterior>
+                    <gml:LinearRing>
+                      <gml:posList srsDimension="2" count="9"> -639193.92 5369508.57 -639219.87 5369499.8 -639219.02 5369497.26 -639224.29 5369495.48 -639227.01 5369503.58 -639221.74 5369505.36 -639223.27 5369509.93 -639197.31 5369518.7 -639193.92 5369508.57</gml:posList>
+                    </gml:LinearRing>
+                </gml:exterior>
+              </gml:PolygonPatch>
+           </gml:patches>
+         </gml:Surface>
+        </bu-core2d:geometry>
+ 	      <bu-core2d:horizontalGeometryEstimatedAccuracy uom="m">0.1</bu-core2d:horizontalGeometryEstimatedAccuracy>
+ 	      <bu-core2d:horizontalGeometryReference>footPrint</bu-core2d:horizontalGeometryReference>
+ 	      <bu-core2d:referenceGeometry>true</bu-core2d:referenceGeometry>
+       </bu-core2d:BuildingGeometry>
+      </bu-ext2d:geometry>
+      <bu-ext2d:numberOfFloorsAboveGround>1</bu-ext2d:numberOfFloorsAboveGround>
+      <bu-ext2d:heightBelowGround uom="m">0</bu-ext2d:heightBelowGround>
+      <bu-ext2d:numberOfFloorsBelowGround>0</bu-ext2d:numberOfFloorsBelowGround>
+    </bu-ext2d:BuildingPart>
+  </gml:featureMember>
+  <gml:featureMember>
+    <bu-ext2d:BuildingPart gml:id="ES.SDGC.BU.Q10110900TP80G_part10">
+      <bu-core2d:beginLifespanVersion>2015-09-07T00:00:00</bu-core2d:beginLifespanVersion>
+      <bu-core2d:conditionOfConstruction xsi:nil="true" nilReason="other:unpopulated"></bu-core2d:conditionOfConstruction>
+      <bu-core2d:inspireId>
+        <base:Identifier>
+          <base:localId>Q10110900TP80G_part10</base:localId>
+          <base:namespace>ES.SDGC.BU</base:namespace>
+        </base:Identifier>
+      </bu-core2d:inspireId>
+      <bu-core2d:addresses xlink:href="http://ovc.catastro.meh.es/INSPIRE/wfsAD.aspx?service=wfs&amp;version=2&amp;request=GetFeature&amp;STOREDQUERIE_ID=GetadByRefcat&amp;refcat=Q10110900TP80G&amp;srsname=EPSG::3857"></bu-core2d:addresses>
+      <bu-core2d:cadastralParcels xlink:href="http://ovc.catastro.meh.es/INSPIRE/wfsCP.aspx?service=wfs&amp;version=2&amp;request=GetFeature&amp;STOREDQUERIE_ID=GetParcel&amp;refcat=Q10110900TP80G&amp;srsname=EPSG::3857"></bu-core2d:cadastralParcels>
+      <bu-ext2d:geometry>
+       <bu-core2d:BuildingGeometry>
+        <bu-core2d:geometry>
+         <gml:Surface gml:id="Surface_ES.SDGC.BU.Q10110900TP80G_part10" srsName="urn:ogc:def:crs:EPSG::3857">
+           <gml:patches>
+              <gml:PolygonPatch>
+                <gml:exterior>
+                    <gml:LinearRing>
+                      <gml:posList srsDimension="2" count="76"> -639204.29 5369744.22 -639204.16 5369746.61 -639208.12 5369749.79 -639208 5369757.6 -639202.63 5369758.6 -639202 5369765.79 -639199 5369767.59 -639198.03 5369774.19 -639197.57 5369774.42 -639192.28 5369776.81 -639187.11 5369772.63 -639183.47 5369774.96 -639178.09 5369770.44 -639173.18 5369773.86 -639167.27 5369769.83 -639162.16 5369773.38 -639156.62 5369768.38 -639150.95 5369771.89 -639147.85 5369769.57 -639142.09 5369772.81 -639137.27 5369769.15 -639137.41 5369761.9 -639134.81 5369760.4 -639134.95 5369753.44 -639130.17 5369751.02 -639130.01 5369744.05 -639125.37 5369741.16 -639125.51 5369734.51 -639124.74 5369733.99 -639120.5 5369731.1 -639120.35 5369726.75 -639115.88 5369724.76 -639116.6 5369716.76 -639121.23 5369714.08 -639121.27 5369713.08 -639121.42 5369710.03 -639123 5369709.26 -639127.88 5369706.87 -639127.8 5369705.66 -639127.54 5369701.62 -639134.22 5369698.61 -639139.56 5369701.72 -639138.97 5369708.19 -639144.75 5369711.91 -639150.41 5369708.03 -639149.52 5369718.63 -639152.43 5369717.39 -639159.06 5369721.57 -639159.03 5369724.79 -639150.69 5369729.75 -639147.53 5369727.93 -639146.83 5369730.42 -639148.34 5369730.85 -639152.21 5369738.66 -639152.29 5369740.92 -639154.21 5369741.2 -639154.23 5369738.95 -639155.24 5369738.32 -639163.15 5369733.42 -639165.86 5369734.8 -639164.7 5369745.1 -639162.63 5369746.33 -639163.4 5369747.64 -639173.42 5369747.25 -639175.71 5369748.44 -639176.62 5369746.52 -639174.45 5369745.48 -639174.69 5369735.78 -639177.32 5369734.53 -639184.59 5369740.26 -639184.45 5369743.55 -639186.27 5369742.43 -639193.31 5369738.09 -639192.54 5369743.71 -639198.16 5369747.69 -639204.29 5369744.22</gml:posList>
+                    </gml:LinearRing>
+                </gml:exterior>
+                <gml:interior>
+                    <gml:LinearRing>
+                      <gml:posList srsDimension="2" count="8"> -639175.5 5369760.9 -639184.87 5369766.94 -639195.73 5369761.59 -639196.42 5369749.98 -639194.01 5369748.11 -639189.51 5369744.95 -639175.5 5369751.5 -639175.5 5369760.9</gml:posList>
+                    </gml:LinearRing>
+                </gml:interior>
+                <gml:interior>
+                    <gml:LinearRing>
+                      <gml:posList srsDimension="2" count="7"> -639142.38 5369746.72 -639142.14 5369756.39 -639151.88 5369763.39 -639161.71 5369758.72 -639162.08 5369749.65 -639149.55 5369743.02 -639142.38 5369746.72</gml:posList>
+                    </gml:LinearRing>
+                </gml:interior>
+                <gml:interior>
+                    <gml:LinearRing>
+                      <gml:posList srsDimension="2" count="8"> -639136.43 5369732.96 -639144.38 5369729.94 -639144.55 5369716.25 -639138.56 5369711.95 -639128.88 5369716.7 -639128.31 5369726.73 -639128.33 5369727.35 -639136.43 5369732.96</gml:posList>
+                    </gml:LinearRing>
+                </gml:interior>
+              </gml:PolygonPatch>
+           </gml:patches>
+         </gml:Surface>
+        </bu-core2d:geometry>
+ 	      <bu-core2d:horizontalGeometryEstimatedAccuracy uom="m">0.1</bu-core2d:horizontalGeometryEstimatedAccuracy>
+ 	      <bu-core2d:horizontalGeometryReference>footPrint</bu-core2d:horizontalGeometryReference>
+ 	      <bu-core2d:referenceGeometry>true</bu-core2d:referenceGeometry>
+       </bu-core2d:BuildingGeometry>
+      </bu-ext2d:geometry>
+      <bu-ext2d:numberOfFloorsAboveGround>1</bu-ext2d:numberOfFloorsAboveGround>
+      <bu-ext2d:heightBelowGround uom="m">0</bu-ext2d:heightBelowGround>
+      <bu-ext2d:numberOfFloorsBelowGround>0</bu-ext2d:numberOfFloorsBelowGround>
+    </bu-ext2d:BuildingPart>
+  </gml:featureMember>
+  <gml:featureMember>
+    <bu-ext2d:BuildingPart gml:id="ES.SDGC.BU.Q10110900TP80G_part11">
+      <bu-core2d:beginLifespanVersion>2015-09-07T00:00:00</bu-core2d:beginLifespanVersion>
+      <bu-core2d:conditionOfConstruction xsi:nil="true" nilReason="other:unpopulated"></bu-core2d:conditionOfConstruction>
+      <bu-core2d:inspireId>
+        <base:Identifier>
+          <base:localId>Q10110900TP80G_part11</base:localId>
+          <base:namespace>ES.SDGC.BU</base:namespace>
+        </base:Identifier>
+      </bu-core2d:inspireId>
+      <bu-core2d:addresses xlink:href="http://ovc.catastro.meh.es/INSPIRE/wfsAD.aspx?service=wfs&amp;version=2&amp;request=GetFeature&amp;STOREDQUERIE_ID=GetadByRefcat&amp;refcat=Q10110900TP80G&amp;srsname=EPSG::3857"></bu-core2d:addresses>
+      <bu-core2d:cadastralParcels xlink:href="http://ovc.catastro.meh.es/INSPIRE/wfsCP.aspx?service=wfs&amp;version=2&amp;request=GetFeature&amp;STOREDQUERIE_ID=GetParcel&amp;refcat=Q10110900TP80G&amp;srsname=EPSG::3857"></bu-core2d:cadastralParcels>
+      <bu-ext2d:geometry>
+       <bu-core2d:BuildingGeometry>
+        <bu-core2d:geometry>
+         <gml:Surface gml:id="Surface_ES.SDGC.BU.Q10110900TP80G_part11" srsName="urn:ogc:def:crs:EPSG::3857">
+           <gml:patches>
+              <gml:PolygonPatch>
+                <gml:exterior>
+                    <gml:LinearRing>
+                      <gml:posList srsDimension="2" count="7"> -639193.31 5369738.09 -639198.74 5369734.75 -639204.59 5369738.5 -639204.29 5369744.22 -639198.16 5369747.69 -639192.54 5369743.71 -639193.31 5369738.09</gml:posList>
+                    </gml:LinearRing>
+                </gml:exterior>
+              </gml:PolygonPatch>
+           </gml:patches>
+         </gml:Surface>
+        </bu-core2d:geometry>
+ 	      <bu-core2d:horizontalGeometryEstimatedAccuracy uom="m">0.1</bu-core2d:horizontalGeometryEstimatedAccuracy>
+ 	      <bu-core2d:horizontalGeometryReference>footPrint</bu-core2d:horizontalGeometryReference>
+ 	      <bu-core2d:referenceGeometry>true</bu-core2d:referenceGeometry>
+       </bu-core2d:BuildingGeometry>
+      </bu-ext2d:geometry>
+      <bu-ext2d:numberOfFloorsAboveGround>1</bu-ext2d:numberOfFloorsAboveGround>
+      <bu-ext2d:heightBelowGround uom="m">0</bu-ext2d:heightBelowGround>
+      <bu-ext2d:numberOfFloorsBelowGround>0</bu-ext2d:numberOfFloorsBelowGround>
+    </bu-ext2d:BuildingPart>
+  </gml:featureMember>
+  <gml:featureMember>
+    <bu-ext2d:BuildingPart gml:id="ES.SDGC.BU.Q10110900TP80G_part12">
+      <bu-core2d:beginLifespanVersion>2015-09-07T00:00:00</bu-core2d:beginLifespanVersion>
+      <bu-core2d:conditionOfConstruction xsi:nil="true" nilReason="other:unpopulated"></bu-core2d:conditionOfConstruction>
+      <bu-core2d:inspireId>
+        <base:Identifier>
+          <base:localId>Q10110900TP80G_part12</base:localId>
+          <base:namespace>ES.SDGC.BU</base:namespace>
+        </base:Identifier>
+      </bu-core2d:inspireId>
+      <bu-core2d:addresses xlink:href="http://ovc.catastro.meh.es/INSPIRE/wfsAD.aspx?service=wfs&amp;version=2&amp;request=GetFeature&amp;STOREDQUERIE_ID=GetadByRefcat&amp;refcat=Q10110900TP80G&amp;srsname=EPSG::3857"></bu-core2d:addresses>
+      <bu-core2d:cadastralParcels xlink:href="http://ovc.catastro.meh.es/INSPIRE/wfsCP.aspx?service=wfs&amp;version=2&amp;request=GetFeature&amp;STOREDQUERIE_ID=GetParcel&amp;refcat=Q10110900TP80G&amp;srsname=EPSG::3857"></bu-core2d:cadastralParcels>
+      <bu-ext2d:geometry>
+       <bu-core2d:BuildingGeometry>
+        <bu-core2d:geometry>
+         <gml:Surface gml:id="Surface_ES.SDGC.BU.Q10110900TP80G_part12" srsName="urn:ogc:def:crs:EPSG::3857">
+           <gml:patches>
+              <gml:PolygonPatch>
+                <gml:exterior>
+                    <gml:LinearRing>
+                      <gml:posList srsDimension="2" count="7"> -639139.56 5369701.72 -639144.66 5369698.89 -639150.88 5369702.49 -639150.41 5369708.03 -639144.75 5369711.91 -639138.97 5369708.19 -639139.56 5369701.72</gml:posList>
+                    </gml:LinearRing>
+                </gml:exterior>
+              </gml:PolygonPatch>
+           </gml:patches>
+         </gml:Surface>
+        </bu-core2d:geometry>
+ 	      <bu-core2d:horizontalGeometryEstimatedAccuracy uom="m">0.1</bu-core2d:horizontalGeometryEstimatedAccuracy>
+ 	      <bu-core2d:horizontalGeometryReference>footPrint</bu-core2d:horizontalGeometryReference>
+ 	      <bu-core2d:referenceGeometry>true</bu-core2d:referenceGeometry>
+       </bu-core2d:BuildingGeometry>
+      </bu-ext2d:geometry>
+      <bu-ext2d:numberOfFloorsAboveGround>1</bu-ext2d:numberOfFloorsAboveGround>
+      <bu-ext2d:heightBelowGround uom="m">0</bu-ext2d:heightBelowGround>
+      <bu-ext2d:numberOfFloorsBelowGround>0</bu-ext2d:numberOfFloorsBelowGround>
+    </bu-ext2d:BuildingPart>
+  </gml:featureMember>
+  <gml:featureMember>
+    <bu-ext2d:BuildingPart gml:id="ES.SDGC.BU.Q10110900TP80G_part13">
+      <bu-core2d:beginLifespanVersion>2015-09-07T00:00:00</bu-core2d:beginLifespanVersion>
+      <bu-core2d:conditionOfConstruction xsi:nil="true" nilReason="other:unpopulated"></bu-core2d:conditionOfConstruction>
+      <bu-core2d:inspireId>
+        <base:Identifier>
+          <base:localId>Q10110900TP80G_part13</base:localId>
+          <base:namespace>ES.SDGC.BU</base:namespace>
+        </base:Identifier>
+      </bu-core2d:inspireId>
+      <bu-core2d:addresses xlink:href="http://ovc.catastro.meh.es/INSPIRE/wfsAD.aspx?service=wfs&amp;version=2&amp;request=GetFeature&amp;STOREDQUERIE_ID=GetadByRefcat&amp;refcat=Q10110900TP80G&amp;srsname=EPSG::3857"></bu-core2d:addresses>
+      <bu-core2d:cadastralParcels xlink:href="http://ovc.catastro.meh.es/INSPIRE/wfsCP.aspx?service=wfs&amp;version=2&amp;request=GetFeature&amp;STOREDQUERIE_ID=GetParcel&amp;refcat=Q10110900TP80G&amp;srsname=EPSG::3857"></bu-core2d:cadastralParcels>
+      <bu-ext2d:geometry>
+       <bu-core2d:BuildingGeometry>
+        <bu-core2d:geometry>
+         <gml:Surface gml:id="Surface_ES.SDGC.BU.Q10110900TP80G_part13" srsName="urn:ogc:def:crs:EPSG::3857">
+           <gml:patches>
+              <gml:PolygonPatch>
+                <gml:exterior>
+                    <gml:LinearRing>
+                      <gml:posList srsDimension="2" count="39"> -639099.08 5369576.85 -639099.11 5369574.36 -639101.44 5369568.3 -639107.74 5369562.85 -639113.53 5369560.84 -639119.83 5369560.81 -639120.14 5369563.81 -639120.4 5369566.41 -639122.27 5369567.91 -639122.42 5369568.03 -639124.27 5369570.26 -639130.06 5369569.45 -639135.42 5369568.17 -639137.16 5369576.88 -639135.36 5369585.67 -639134.59 5369585.57 -639127.75 5369584.69 -639125.34 5369583.79 -639122.58 5369586.81 -639126.14 5369594.34 -639123.6 5369595.44 -639125.01 5369599.93 -639125.16 5369600.39 -639120.94 5369601.49 -639118.17 5369601.74 -639118.28 5369605.11 -639112.82 5369605.1 -639112.82 5369601.74 -639108.01 5369600.78 -639108.96 5369595.92 -639105.7 5369594.91 -639108.54 5369589.54 -639106.68 5369588.57 -639107.65 5369587.2 -639106.45 5369585.93 -639102.55 5369588.6 -639100.39 5369585.95 -639099.03 5369580.27 -639099.08 5369576.85</gml:posList>
+                    </gml:LinearRing>
+                </gml:exterior>
+              </gml:PolygonPatch>
+           </gml:patches>
+         </gml:Surface>
+        </bu-core2d:geometry>
+ 	      <bu-core2d:horizontalGeometryEstimatedAccuracy uom="m">0.1</bu-core2d:horizontalGeometryEstimatedAccuracy>
+ 	      <bu-core2d:horizontalGeometryReference>footPrint</bu-core2d:horizontalGeometryReference>
+ 	      <bu-core2d:referenceGeometry>true</bu-core2d:referenceGeometry>
+       </bu-core2d:BuildingGeometry>
+      </bu-ext2d:geometry>
+      <bu-ext2d:numberOfFloorsAboveGround>1</bu-ext2d:numberOfFloorsAboveGround>
+      <bu-ext2d:heightBelowGround uom="m">0</bu-ext2d:heightBelowGround>
+      <bu-ext2d:numberOfFloorsBelowGround>0</bu-ext2d:numberOfFloorsBelowGround>
+    </bu-ext2d:BuildingPart>
+  </gml:featureMember>
+  <gml:featureMember>
+    <bu-ext2d:BuildingPart gml:id="ES.SDGC.BU.Q10110900TP80G_part14">
+      <bu-core2d:beginLifespanVersion>2015-09-07T00:00:00</bu-core2d:beginLifespanVersion>
+      <bu-core2d:conditionOfConstruction xsi:nil="true" nilReason="other:unpopulated"></bu-core2d:conditionOfConstruction>
+      <bu-core2d:inspireId>
+        <base:Identifier>
+          <base:localId>Q10110900TP80G_part14</base:localId>
+          <base:namespace>ES.SDGC.BU</base:namespace>
+        </base:Identifier>
+      </bu-core2d:inspireId>
+      <bu-core2d:addresses xlink:href="http://ovc.catastro.meh.es/INSPIRE/wfsAD.aspx?service=wfs&amp;version=2&amp;request=GetFeature&amp;STOREDQUERIE_ID=GetadByRefcat&amp;refcat=Q10110900TP80G&amp;srsname=EPSG::3857"></bu-core2d:addresses>
+      <bu-core2d:cadastralParcels xlink:href="http://ovc.catastro.meh.es/INSPIRE/wfsCP.aspx?service=wfs&amp;version=2&amp;request=GetFeature&amp;STOREDQUERIE_ID=GetParcel&amp;refcat=Q10110900TP80G&amp;srsname=EPSG::3857"></bu-core2d:cadastralParcels>
+      <bu-ext2d:geometry>
+       <bu-core2d:BuildingGeometry>
+        <bu-core2d:geometry>
+         <gml:Surface gml:id="Surface_ES.SDGC.BU.Q10110900TP80G_part14" srsName="urn:ogc:def:crs:EPSG::3857">
+           <gml:patches>
+              <gml:PolygonPatch>
+                <gml:exterior>
+                    <gml:LinearRing>
+                      <gml:posList srsDimension="2" count="13"> -639118.28 5369605.11 -639133.83 5369605.13 -639133.82 5369616.16 -639131.07 5369616.16 -639071.33 5369616.08 -639067.89 5369616.07 -639067.91 5369607.83 -639067.91 5369605.05 -639072.11 5369605.05 -639080.96 5369605.07 -639088.78 5369605.07 -639112.82 5369605.1 -639118.28 5369605.11</gml:posList>
+                    </gml:LinearRing>
+                </gml:exterior>
+              </gml:PolygonPatch>
+           </gml:patches>
+         </gml:Surface>
+        </bu-core2d:geometry>
+ 	      <bu-core2d:horizontalGeometryEstimatedAccuracy uom="m">0.1</bu-core2d:horizontalGeometryEstimatedAccuracy>
+ 	      <bu-core2d:horizontalGeometryReference>footPrint</bu-core2d:horizontalGeometryReference>
+ 	      <bu-core2d:referenceGeometry>true</bu-core2d:referenceGeometry>
+       </bu-core2d:BuildingGeometry>
+      </bu-ext2d:geometry>
+      <bu-ext2d:numberOfFloorsAboveGround>2</bu-ext2d:numberOfFloorsAboveGround>
+      <bu-ext2d:heightBelowGround uom="m">0</bu-ext2d:heightBelowGround>
+      <bu-ext2d:numberOfFloorsBelowGround>0</bu-ext2d:numberOfFloorsBelowGround>
+    </bu-ext2d:BuildingPart>
+  </gml:featureMember>
+  <gml:featureMember>
+    <bu-ext2d:BuildingPart gml:id="ES.SDGC.BU.Q10110900TP80G_part15">
+      <bu-core2d:beginLifespanVersion>2015-09-07T00:00:00</bu-core2d:beginLifespanVersion>
+      <bu-core2d:conditionOfConstruction xsi:nil="true" nilReason="other:unpopulated"></bu-core2d:conditionOfConstruction>
+      <bu-core2d:inspireId>
+        <base:Identifier>
+          <base:localId>Q10110900TP80G_part15</base:localId>
+          <base:namespace>ES.SDGC.BU</base:namespace>
+        </base:Identifier>
+      </bu-core2d:inspireId>
+      <bu-core2d:addresses xlink:href="http://ovc.catastro.meh.es/INSPIRE/wfsAD.aspx?service=wfs&amp;version=2&amp;request=GetFeature&amp;STOREDQUERIE_ID=GetadByRefcat&amp;refcat=Q10110900TP80G&amp;srsname=EPSG::3857"></bu-core2d:addresses>
+      <bu-core2d:cadastralParcels xlink:href="http://ovc.catastro.meh.es/INSPIRE/wfsCP.aspx?service=wfs&amp;version=2&amp;request=GetFeature&amp;STOREDQUERIE_ID=GetParcel&amp;refcat=Q10110900TP80G&amp;srsname=EPSG::3857"></bu-core2d:cadastralParcels>
+      <bu-ext2d:geometry>
+       <bu-core2d:BuildingGeometry>
+        <bu-core2d:geometry>
+         <gml:Surface gml:id="Surface_ES.SDGC.BU.Q10110900TP80G_part15" srsName="urn:ogc:def:crs:EPSG::3857">
+           <gml:patches>
+              <gml:PolygonPatch>
+                <gml:exterior>
+                    <gml:LinearRing>
+                      <gml:posList srsDimension="2" count="17"> -639131.06 5369623.74 -639132.43 5369623.74 -639132.42 5369631.32 -639069.93 5369631.24 -639069.94 5369623.66 -639071.33 5369623.66 -639071.32 5369624.34 -639075.43 5369624.35 -639075.44 5369627.77 -639089.88 5369627.79 -639089.87 5369626.67 -639112.51 5369626.69 -639112.51 5369627.83 -639126.94 5369627.83 -639126.94 5369624.43 -639131.06 5369624.43 -639131.06 5369623.74</gml:posList>
+                    </gml:LinearRing>
+                </gml:exterior>
+              </gml:PolygonPatch>
+           </gml:patches>
+         </gml:Surface>
+        </bu-core2d:geometry>
+ 	      <bu-core2d:horizontalGeometryEstimatedAccuracy uom="m">0.1</bu-core2d:horizontalGeometryEstimatedAccuracy>
+ 	      <bu-core2d:horizontalGeometryReference>footPrint</bu-core2d:horizontalGeometryReference>
+ 	      <bu-core2d:referenceGeometry>true</bu-core2d:referenceGeometry>
+       </bu-core2d:BuildingGeometry>
+      </bu-ext2d:geometry>
+      <bu-ext2d:numberOfFloorsAboveGround>1</bu-ext2d:numberOfFloorsAboveGround>
+      <bu-ext2d:heightBelowGround uom="m">0</bu-ext2d:heightBelowGround>
+      <bu-ext2d:numberOfFloorsBelowGround>0</bu-ext2d:numberOfFloorsBelowGround>
+    </bu-ext2d:BuildingPart>
+  </gml:featureMember>
+  <gml:featureMember>
+    <bu-ext2d:BuildingPart gml:id="ES.SDGC.BU.Q10110900TP80G_part16">
+      <bu-core2d:beginLifespanVersion>2015-09-07T00:00:00</bu-core2d:beginLifespanVersion>
+      <bu-core2d:conditionOfConstruction xsi:nil="true" nilReason="other:unpopulated"></bu-core2d:conditionOfConstruction>
+      <bu-core2d:inspireId>
+        <base:Identifier>
+          <base:localId>Q10110900TP80G_part16</base:localId>
+          <base:namespace>ES.SDGC.BU</base:namespace>
+        </base:Identifier>
+      </bu-core2d:inspireId>
+      <bu-core2d:addresses xlink:href="http://ovc.catastro.meh.es/INSPIRE/wfsAD.aspx?service=wfs&amp;version=2&amp;request=GetFeature&amp;STOREDQUERIE_ID=GetadByRefcat&amp;refcat=Q10110900TP80G&amp;srsname=EPSG::3857"></bu-core2d:addresses>
+      <bu-core2d:cadastralParcels xlink:href="http://ovc.catastro.meh.es/INSPIRE/wfsCP.aspx?service=wfs&amp;version=2&amp;request=GetFeature&amp;STOREDQUERIE_ID=GetParcel&amp;refcat=Q10110900TP80G&amp;srsname=EPSG::3857"></bu-core2d:cadastralParcels>
+      <bu-ext2d:geometry>
+       <bu-core2d:BuildingGeometry>
+        <bu-core2d:geometry>
+         <gml:Surface gml:id="Surface_ES.SDGC.BU.Q10110900TP80G_part16" srsName="urn:ogc:def:crs:EPSG::3857">
+           <gml:patches>
+              <gml:PolygonPatch>
+                <gml:exterior>
+                    <gml:LinearRing>
+                      <gml:posList srsDimension="2" count="18"> -639071.33 5369616.08 -639131.07 5369616.16 -639131.06 5369623.74 -639131.06 5369624.43 -639126.94 5369624.43 -639126.94 5369627.83 -639112.51 5369627.83 -639112.51 5369626.69 -639112.53 5369619.56 -639089.88 5369619.54 -639089.87 5369626.67 -639089.88 5369627.79 -639075.44 5369627.77 -639075.43 5369624.35 -639071.32 5369624.34 -639071.33 5369623.66 -639071.32 5369617.37 -639071.33 5369616.08</gml:posList>
+                    </gml:LinearRing>
+                </gml:exterior>
+              </gml:PolygonPatch>
+           </gml:patches>
+         </gml:Surface>
+        </bu-core2d:geometry>
+ 	      <bu-core2d:horizontalGeometryEstimatedAccuracy uom="m">0.1</bu-core2d:horizontalGeometryEstimatedAccuracy>
+ 	      <bu-core2d:horizontalGeometryReference>footPrint</bu-core2d:horizontalGeometryReference>
+ 	      <bu-core2d:referenceGeometry>true</bu-core2d:referenceGeometry>
+       </bu-core2d:BuildingGeometry>
+      </bu-ext2d:geometry>
+      <bu-ext2d:numberOfFloorsAboveGround>1</bu-ext2d:numberOfFloorsAboveGround>
+      <bu-ext2d:heightBelowGround uom="m">0</bu-ext2d:heightBelowGround>
+      <bu-ext2d:numberOfFloorsBelowGround>0</bu-ext2d:numberOfFloorsBelowGround>
+    </bu-ext2d:BuildingPart>
+  </gml:featureMember>
+  <gml:featureMember>
+    <bu-ext2d:BuildingPart gml:id="ES.SDGC.BU.Q10110900TP80G_part17">
+      <bu-core2d:beginLifespanVersion>2015-09-07T00:00:00</bu-core2d:beginLifespanVersion>
+      <bu-core2d:conditionOfConstruction xsi:nil="true" nilReason="other:unpopulated"></bu-core2d:conditionOfConstruction>
+      <bu-core2d:inspireId>
+        <base:Identifier>
+          <base:localId>Q10110900TP80G_part17</base:localId>
+          <base:namespace>ES.SDGC.BU</base:namespace>
+        </base:Identifier>
+      </bu-core2d:inspireId>
+      <bu-core2d:addresses xlink:href="http://ovc.catastro.meh.es/INSPIRE/wfsAD.aspx?service=wfs&amp;version=2&amp;request=GetFeature&amp;STOREDQUERIE_ID=GetadByRefcat&amp;refcat=Q10110900TP80G&amp;srsname=EPSG::3857"></bu-core2d:addresses>
+      <bu-core2d:cadastralParcels xlink:href="http://ovc.catastro.meh.es/INSPIRE/wfsCP.aspx?service=wfs&amp;version=2&amp;request=GetFeature&amp;STOREDQUERIE_ID=GetParcel&amp;refcat=Q10110900TP80G&amp;srsname=EPSG::3857"></bu-core2d:cadastralParcels>
+      <bu-ext2d:geometry>
+       <bu-core2d:BuildingGeometry>
+        <bu-core2d:geometry>
+         <gml:Surface gml:id="Surface_ES.SDGC.BU.Q10110900TP80G_part17" srsName="urn:ogc:def:crs:EPSG::3857">
+           <gml:patches>
+              <gml:PolygonPatch>
+                <gml:exterior>
+                    <gml:LinearRing>
+                      <gml:posList srsDimension="2" count="14"> -639099.08 5369576.85 -639099.03 5369580.27 -639100.39 5369585.95 -639102.55 5369588.6 -639088.79 5369600.12 -639088.8 5369589.94 -639094.88 5369589.99 -639097.29 5369587.59 -639097.32 5369583.9 -639094.73 5369581.6 -639088.82 5369581.56 -639088.82 5369577 -639089.01 5369577 -639099.08 5369576.85</gml:posList>
+                    </gml:LinearRing>
+                </gml:exterior>
+              </gml:PolygonPatch>
+           </gml:patches>
+         </gml:Surface>
+        </bu-core2d:geometry>
+ 	      <bu-core2d:horizontalGeometryEstimatedAccuracy uom="m">0.1</bu-core2d:horizontalGeometryEstimatedAccuracy>
+ 	      <bu-core2d:horizontalGeometryReference>footPrint</bu-core2d:horizontalGeometryReference>
+ 	      <bu-core2d:referenceGeometry>true</bu-core2d:referenceGeometry>
+       </bu-core2d:BuildingGeometry>
+      </bu-ext2d:geometry>
+      <bu-ext2d:numberOfFloorsAboveGround>1</bu-ext2d:numberOfFloorsAboveGround>
+      <bu-ext2d:heightBelowGround uom="m">3</bu-ext2d:heightBelowGround>
+      <bu-ext2d:numberOfFloorsBelowGround>1</bu-ext2d:numberOfFloorsBelowGround>
+    </bu-ext2d:BuildingPart>
+  </gml:featureMember>
+  <gml:featureMember>
+    <bu-ext2d:BuildingPart gml:id="ES.SDGC.BU.Q10110900TP80G_part18">
+      <bu-core2d:beginLifespanVersion>2015-09-07T00:00:00</bu-core2d:beginLifespanVersion>
+      <bu-core2d:conditionOfConstruction xsi:nil="true" nilReason="other:unpopulated"></bu-core2d:conditionOfConstruction>
+      <bu-core2d:inspireId>
+        <base:Identifier>
+          <base:localId>Q10110900TP80G_part18</base:localId>
+          <base:namespace>ES.SDGC.BU</base:namespace>
+        </base:Identifier>
+      </bu-core2d:inspireId>
+      <bu-core2d:addresses xlink:href="http://ovc.catastro.meh.es/INSPIRE/wfsAD.aspx?service=wfs&amp;version=2&amp;request=GetFeature&amp;STOREDQUERIE_ID=GetadByRefcat&amp;refcat=Q10110900TP80G&amp;srsname=EPSG::3857"></bu-core2d:addresses>
+      <bu-core2d:cadastralParcels xlink:href="http://ovc.catastro.meh.es/INSPIRE/wfsCP.aspx?service=wfs&amp;version=2&amp;request=GetFeature&amp;STOREDQUERIE_ID=GetParcel&amp;refcat=Q10110900TP80G&amp;srsname=EPSG::3857"></bu-core2d:cadastralParcels>
+      <bu-ext2d:geometry>
+       <bu-core2d:BuildingGeometry>
+        <bu-core2d:geometry>
+         <gml:Surface gml:id="Surface_ES.SDGC.BU.Q10110900TP80G_part18" srsName="urn:ogc:def:crs:EPSG::3857">
+           <gml:patches>
+              <gml:PolygonPatch>
+                <gml:exterior>
+                    <gml:LinearRing>
+                      <gml:posList srsDimension="2" count="16"> -639088.82 5369577 -639088.82 5369581.56 -639094.73 5369581.6 -639097.32 5369583.9 -639097.29 5369587.59 -639094.88 5369589.99 -639088.8 5369589.94 -639088.79 5369600.12 -639088.78 5369605.07 -639080.96 5369605.07 -639080.97 5369598.17 -639072.12 5369598.16 -639072.18 5369551.3 -639088.85 5369551.32 -639088.85 5369552.14 -639088.82 5369577</gml:posList>
+                    </gml:LinearRing>
+                </gml:exterior>
+              </gml:PolygonPatch>
+           </gml:patches>
+         </gml:Surface>
+        </bu-core2d:geometry>
+ 	      <bu-core2d:horizontalGeometryEstimatedAccuracy uom="m">0.1</bu-core2d:horizontalGeometryEstimatedAccuracy>
+ 	      <bu-core2d:horizontalGeometryReference>footPrint</bu-core2d:horizontalGeometryReference>
+ 	      <bu-core2d:referenceGeometry>true</bu-core2d:referenceGeometry>
+       </bu-core2d:BuildingGeometry>
+      </bu-ext2d:geometry>
+      <bu-ext2d:numberOfFloorsAboveGround>2</bu-ext2d:numberOfFloorsAboveGround>
+      <bu-ext2d:heightBelowGround uom="m">3</bu-ext2d:heightBelowGround>
+      <bu-ext2d:numberOfFloorsBelowGround>1</bu-ext2d:numberOfFloorsBelowGround>
+    </bu-ext2d:BuildingPart>
+  </gml:featureMember>
+  <gml:featureMember>
+    <bu-ext2d:BuildingPart gml:id="ES.SDGC.BU.Q10110900TP80G_part19">
+      <bu-core2d:beginLifespanVersion>2015-09-07T00:00:00</bu-core2d:beginLifespanVersion>
+      <bu-core2d:conditionOfConstruction xsi:nil="true" nilReason="other:unpopulated"></bu-core2d:conditionOfConstruction>
+      <bu-core2d:inspireId>
+        <base:Identifier>
+          <base:localId>Q10110900TP80G_part19</base:localId>
+          <base:namespace>ES.SDGC.BU</base:namespace>
+        </base:Identifier>
+      </bu-core2d:inspireId>
+      <bu-core2d:addresses xlink:href="http://ovc.catastro.meh.es/INSPIRE/wfsAD.aspx?service=wfs&amp;version=2&amp;request=GetFeature&amp;STOREDQUERIE_ID=GetadByRefcat&amp;refcat=Q10110900TP80G&amp;srsname=EPSG::3857"></bu-core2d:addresses>
+      <bu-core2d:cadastralParcels xlink:href="http://ovc.catastro.meh.es/INSPIRE/wfsCP.aspx?service=wfs&amp;version=2&amp;request=GetFeature&amp;STOREDQUERIE_ID=GetParcel&amp;refcat=Q10110900TP80G&amp;srsname=EPSG::3857"></bu-core2d:cadastralParcels>
+      <bu-ext2d:geometry>
+       <bu-core2d:BuildingGeometry>
+        <bu-core2d:geometry>
+         <gml:Surface gml:id="Surface_ES.SDGC.BU.Q10110900TP80G_part19" srsName="urn:ogc:def:crs:EPSG::3857">
+           <gml:patches>
+              <gml:PolygonPatch>
+                <gml:exterior>
+                    <gml:LinearRing>
+                      <gml:posList srsDimension="2" count="5"> -639072.12 5369598.16 -639080.97 5369598.17 -639080.96 5369605.07 -639072.11 5369605.05 -639072.12 5369598.16</gml:posList>
+                    </gml:LinearRing>
+                </gml:exterior>
+              </gml:PolygonPatch>
+           </gml:patches>
+         </gml:Surface>
+        </bu-core2d:geometry>
+ 	      <bu-core2d:horizontalGeometryEstimatedAccuracy uom="m">0.1</bu-core2d:horizontalGeometryEstimatedAccuracy>
+ 	      <bu-core2d:horizontalGeometryReference>footPrint</bu-core2d:horizontalGeometryReference>
+ 	      <bu-core2d:referenceGeometry>true</bu-core2d:referenceGeometry>
+       </bu-core2d:BuildingGeometry>
+      </bu-ext2d:geometry>
+      <bu-ext2d:numberOfFloorsAboveGround>0</bu-ext2d:numberOfFloorsAboveGround>
+      <bu-ext2d:heightBelowGround uom="m">3</bu-ext2d:heightBelowGround>
+      <bu-ext2d:numberOfFloorsBelowGround>1</bu-ext2d:numberOfFloorsBelowGround>
+    </bu-ext2d:BuildingPart>
+  </gml:featureMember>
+  <gml:featureMember>
+    <bu-ext2d:BuildingPart gml:id="ES.SDGC.BU.Q10110900TP80G_part20">
+      <bu-core2d:beginLifespanVersion>2015-09-07T00:00:00</bu-core2d:beginLifespanVersion>
+      <bu-core2d:conditionOfConstruction xsi:nil="true" nilReason="other:unpopulated"></bu-core2d:conditionOfConstruction>
+      <bu-core2d:inspireId>
+        <base:Identifier>
+          <base:localId>Q10110900TP80G_part20</base:localId>
+          <base:namespace>ES.SDGC.BU</base:namespace>
+        </base:Identifier>
+      </bu-core2d:inspireId>
+      <bu-core2d:addresses xlink:href="http://ovc.catastro.meh.es/INSPIRE/wfsAD.aspx?service=wfs&amp;version=2&amp;request=GetFeature&amp;STOREDQUERIE_ID=GetadByRefcat&amp;refcat=Q10110900TP80G&amp;srsname=EPSG::3857"></bu-core2d:addresses>
+      <bu-core2d:cadastralParcels xlink:href="http://ovc.catastro.meh.es/INSPIRE/wfsCP.aspx?service=wfs&amp;version=2&amp;request=GetFeature&amp;STOREDQUERIE_ID=GetParcel&amp;refcat=Q10110900TP80G&amp;srsname=EPSG::3857"></bu-core2d:cadastralParcels>
+      <bu-ext2d:geometry>
+       <bu-core2d:BuildingGeometry>
+        <bu-core2d:geometry>
+         <gml:Surface gml:id="Surface_ES.SDGC.BU.Q10110900TP80G_part20" srsName="urn:ogc:def:crs:EPSG::3857">
+           <gml:patches>
+              <gml:PolygonPatch>
+                <gml:exterior>
+                    <gml:LinearRing>
+                      <gml:posList srsDimension="2" count="5"> -639024.65 5369634.3 -639025.57 5369642.06 -638995.07 5369651.56 -638993.17 5369635.34 -639024.65 5369634.3</gml:posList>
+                    </gml:LinearRing>
+                </gml:exterior>
+              </gml:PolygonPatch>
+           </gml:patches>
+         </gml:Surface>
+        </bu-core2d:geometry>
+ 	      <bu-core2d:horizontalGeometryEstimatedAccuracy uom="m">0.1</bu-core2d:horizontalGeometryEstimatedAccuracy>
+ 	      <bu-core2d:horizontalGeometryReference>footPrint</bu-core2d:horizontalGeometryReference>
+ 	      <bu-core2d:referenceGeometry>true</bu-core2d:referenceGeometry>
+       </bu-core2d:BuildingGeometry>
+      </bu-ext2d:geometry>
+      <bu-ext2d:numberOfFloorsAboveGround>1</bu-ext2d:numberOfFloorsAboveGround>
+      <bu-ext2d:heightBelowGround uom="m">3</bu-ext2d:heightBelowGround>
+      <bu-ext2d:numberOfFloorsBelowGround>1</bu-ext2d:numberOfFloorsBelowGround>
+    </bu-ext2d:BuildingPart>
+  </gml:featureMember>
+</gml:FeatureCollection>

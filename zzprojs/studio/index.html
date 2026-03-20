@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<meta http-equiv="cache-control" content="no-cache, must-revalidate, post-check=0, pre-check=0" />
+	<meta http-equiv="cache-control" content="max-age=0" />
+	<meta http-equiv="expires" content="0" />
+	<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+	<meta http-equiv="pragma" content="no-cache" />
+
+	<title>TerreStudio - 3D.AR+VR+Stereo</title>
+	<link rel="stylesheet" href="../TR3-sto/assets/styles.css">
+	<style>
+		:root {
+			--mineColor: rgb(200, 200, 200);
+			--font-sans: 'Inter', sans-serif;
+			--font-light: 300;
+			--font-regular: 400;
+			--font-medium: 500;
+			--font-semibold: 600;
+			--font-bold: 700;
+
+			--color-yellow: #FEE366;
+			--color-black: #000000;
+			--color-green: #466F29;
+			--color-green-hover: #5AAA4F;
+			--color-white: #FFFFFF;
+			--color-blue: #29A9E0;
+			--color-gray: #858585;
+			--color-gray-200: #f2f2f2;
+			--color-gray-300: #ddd;
+			--color-gray-hover-bg: rgba(204, 204, 204, 0.2);
+			--color-black-12: rgba(0, 0, 0, 0.12);
+			--shadow-sm: 0 4px 4px rgba(0, 0, 0, 0.25);
+			--filter-yellow: brightness(0) saturate(100%) invert(84%) sepia(78%) saturate(340%) hue-rotate(5deg) brightness(104%) contrast(103%);
+
+			--principalColor: var(--color-yellow);
+			--color-ProgressBar: #ccc;
+			--border-progressBar: 30px 0px 0px 30px;
+		}
+
+		.btn-circular {
+			padding: 0.3125rem;
+			width: 2.4375rem;
+			height: 2.4375rem;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border: none;
+			background-color: var(--color-yellow);
+			color: var(--color-black);
+			font-size: 1.125rem;
+			transition: background-color 0.2s ease, color 0.2s ease;
+		}
+
+		.btn-circular:hover,
+		.btn-circular:active {
+			background-color: var(--color-black);
+			color: var(--color-yellow);
+		}
+
+		.btn-circular:hover img,
+		.btn-circular:active img {
+			filter: var(--filter-yellow);
+		}
+
+		#logosOficial {
+			position: fixed;
+			left: 50%;
+			bottom: 15px;
+			transform: translateX(-50%);
+			width: 100%;
+			max-width: 750px;
+			height: auto;
+			z-index: 40;
+			padding: 0.6875rem 0.5625rem;
+			/* 11px TB, 9px LR */
+			border-radius: 50px;
+			/* 9px X, 11px Y */
+			background-color: white;
+		}
+
+		#logosOficial img {
+			max-width: 100%;
+			height: auto;
+			display: block;
+			margin: 0 auto;
+		}
+
+		@media (max-width: 600px) {
+			#logosOficial {
+				left: 0;
+				right: 0;
+				transform: none;
+				width: 100%;
+				bottom: 10px;
+			}
+		}
+	</style>
+
+	<!--PWA-->
+	<meta name="theme-color" content="#ffffff">
+	<link rel="apple-touch-icon" sizes="192x192" href="./AppImages/192.png">
+	<link rel="manifest" href="./manifest.json" />
+	<!--PWA Worker-->
+	<script>
+		if (typeof navigator.serviceWorker !== 'undefined') {
+			navigator.serviceWorker.register('./regist_serviceWorker.js')
+		}
+		function cerrar() {
+			setTimeout(function () {
+				var href = window.location.href.split('/zzprojs/studio/');
+				window.open(href[0] + '?jsid=103&zzproj=regueras-9784&mode=Art4&imgType=jpg', '_self');
+			}, 1000);
+			window.close();
+		} 
+	</script>
+</head>
+
+<body style="background-color: black;user-select: none">
+	<div id="container" style="width:600px; height:600px;position: absolute;
+			top: 50%;left: 50%; transform: translate(-50%,-50%);">
+	</div>
+	<p onclick="cerrar()" class="btn-circular ItemInactive" style="position: absolute;
+    top: 0px;
+    right: 15px;
+    border-radius: 50px;">
+		<img src="../../skin/icon-close.svg">
+	</p>
+	<!--<div id="info" style="position: absolute;top: 0px;">TerreStudio - 3D.AR+VR</div>-->
+	<div id="logosOficial">
+		<img src="/lasRegueras/skin/logos-pie.svg" alt="Identidad visual oficial">
+	</div>
+	<script src="../TR3-sto/libs/tween.js"></script>
+	<script src="../TR3-sto/libs/detector.js"></script>
+
+	<script type='text/javascript' src='../TR3-sto/api/0init.js'></script>
+	<script type='text/javascript' src='../TR3-sto/api/gui.js'></script>
+	<script type='text/javascript' src='../TR3-sto/api/tools.js'></script>
+	<script type='text/javascript' src='../TR3-sto/api/world.js'></script>
+	<script type='text/javascript' src='../TR3-sto/api/obj3d.js'></script>
+	<script type='text/javascript' src='../TR3-sto/api/css3d.js'></script>
+	<script type='text/javascript' src='../TR3-sto/api/render.js'></script>
+	<script type='text/javascript' src='../TR3-sto/api/events.js'></script>
+	<script type='text/javascript' src='../TR3-sto/api/interactive.js'></script>
+
+	<!--<script type='text/javascript' src='../TR3-sto/build/TR3sto.min.js'></script>-->
+
+	<script type="importmap">
+			{
+				"imports": {
+					"three": "../TR3-sto/THREE/three.module.min.js",
+					"Tadds/": "../TR3-sto/THREE/addons/"
+				}
+			}
+	</script>
+
+	<script type="module">
+		import * as THREE from 'three';
+
+		//import Stats from 'three/addons/libs/stats.module.js';
+
+		import { OrbitControls } from 'Tadds/OrbitControls.js';
+		import { StereoEffect } from 'Tadds/StereoEffect.js';
+		import { AnaglyphEffect } from 'Tadds/AnaglyphEffect.js';
+		import { TransformControls } from 'Tadds/TransformControls.js';
+		import { GLTFLoader } from 'Tadds/GLTFLoader.js';
+		import { GLTFExporter } from 'Tadds/GLTFExporter.js';
+		import { DRACOLoader } from "Tadds/DRACOLoader.js"
+		import { CSS3DRenderer, CSS3DObject, CSS3DSprite } from 'Tadds/CSS3DRenderer.js';
+		import { VRButton } from 'Tadds/webxr/VRButton.js';
+		import { XRControllerModelFactory } from 'Tadds/webxr/XRControllerModelFactory.js';
+		import { GUI } from 'Tadds/lil-gui.module.min.js';
+
+		var threeTR3 = new Array();
+
+		threeTR3.THREE = THREE;
+		threeTR3.OrbitControls = OrbitControls;
+		threeTR3.StereoEffect = StereoEffect;
+		threeTR3.AnaglyphEffect = AnaglyphEffect;
+		threeTR3.TransformControls = TransformControls;
+		threeTR3.GLTFLoader = GLTFLoader;
+		threeTR3.DRACOLoader = DRACOLoader;
+		threeTR3.GLTFExporter = GLTFExporter;
+		threeTR3.CSS3DRenderer = CSS3DRenderer;
+		threeTR3.CSS3DObject = CSS3DObject;
+		threeTR3.CSS3DSprite = CSS3DSprite;
+		threeTR3.VRButton = VRButton;
+		threeTR3.XRControllerModelFactory = XRControllerModelFactory;
+		threeTR3.GUI = GUI;
+
+		const spams = new URLSearchParams(window.location.search);
+
+		var formURL = {
+			model: '2425HD',
+		}
+
+		if (spams.has("model") && spams.get("model") != "") {
+			formURL.model = spams.get("model");
+		}
+		var init = {
+			//pano: {type: 'cube', src: './obj3d/panos/cube', name: 'dark-s_', ext: 'jpg'}, 
+			//loadingImage: './obj3d/init.jpeg',
+			GUI: false,
+			pano: { type: 'sphere', src: './obj3d/panos/sphere', name: 'panoSW', ext: 'jpg' },
+			lights: { ambient: { intensity: 2, color: 0xffffff }, directional: { intensity: 2, color: 0xffffff, pos: new THREE.Vector3(-15, 33, 18) } },
+			floor: { shadow: true, grid: true, floor: true },
+			camaraInit: { "x": 10, "y": 10, "z": 10 }
+		};
+
+		TR3sto.init(threeTR3,
+			init);
+
+		TR3sto.loadMain3d('../../source/obj3d/' + formURL.model + '.glb', { pos: 'center', castShadow: false, receiveShadow: false, /*quaternion: new THREE.Quaternion(0.01378616393730249, -0.00446959971695016, 0.0006026038870916744, 0.9998947950813724), offsetY: -.15*/ }).then(function (mainMesh) {
+			//TR3sto.pano = { type: 'box', src: './obj3d/panos/cube', name: 'brick_', ext: 'jpg', topPos: 'down' };
+			//updateTexture('planeFloor', 'MeshPhongMaterial', './obj3d/panos/cube/brick_py.jpg');
+			var VRButton = document.getElementById('VRButton');
+			VRButton.style.bottom = "60px";
+
+			if (VRButton.innerText.toUpperCase().indexOf('NOT') > -1) {
+				VRButton.style.display = "none";
+			}
+			mainMesh.traverse((child) => {
+				if (child.material) {
+					child.material.side = THREE.DoubleSide;
+				}
+			});
+			//if (formURL.model == "mosaicoHD") { mainMesh.rotation.set(Math.PI, Math.PI / 2, 0); }
+			setTimeout(() => { TR3sto.fullScreen(true, true); orbit.maxDistance = 20; }, 500)
+		});
+		/*TR3sto.loadObj3d('./obj3d/roman.glb', { pos: new THREE.Vector3(0, 0, 0), castShadow: true, receiveShadow: false, scale: new THREE.Vector3(1, 1, 1) }).then(function (obj3d) {
+
+			if (formURL.model == "mosaicoHD") {
+				obj3d.scale.setScalar(.9);
+				obj3d.position.set(1, 2.20, 3.3);
+			} else {
+				obj3d.rotateY(-.7);
+				obj3d.position.set(1, 2.3, 3.3);
+				obj3d.scale.setScalar(.9);
+			}
+			setTimeout(() => { TR3sto.fullScreen(true, true); }, 500)
+		});*/
+
+
+		/*let sprite = TR3sto.makeTextSprite('Damos una segunda vida a las máquinas',
+						{width: 550, guides: true, transform: true, fontsize: 20});
+		sprite.position.set(0,10,0);*/
+
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,140 @@
+body {
+	background-color: #050505;
+	background: radial-gradient(ellipse at center, rgba(43, 45, 48, 1) 0%, rgba(0, 0, 0, 1) 100%);
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+	font-size: larger;
+	margin: 0px;
+}
+
+.TR3sto canvas {
+	top: 0;
+	left: 0;
+	margin: 0px;
+	padding: 0px;
+	/*border: solid 1px;*/
+}
+
+.TR3sto p {
+	border: 2px solid;
+	text-align: center;
+	background-color: lightblue;
+	color: black;
+}
+
+code#infoTR3sro {
+	position: absolute;
+	width: 100%;
+	height: 15%;
+	top: 85%;
+	left: 0px;
+	display: none;
+	overflow: scroll;
+	font-size: small;
+	background-color: lightgray;
+}
+
+img#initImgTR3sro {
+	position: absolute;
+	/*transform: translate(-50%, -50%);top: 50%;left: 50%;*/
+	-webkit-animation: spin 3s ease-in-out infinite;
+	-moz-animation: spin 3s ease-in-out infinite;
+	animation: spin 3s ease-in-out infinite;
+	border: solid 6px #eee;
+	box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+@-moz-keyframes spin {
+	50% {
+		-moz-transform: rotateY(20deg) rotateX(1deg) rotateZ(1deg);
+	}
+}
+
+@-webkit-keyframes spin {
+	50% {
+		-webkit-transform: rotateY(20deg) rotateX(1deg) rotateZ(1deg);
+	}
+}
+
+@keyframes spin {
+	50% {
+		-webkit-transform: rotateY(20deg) rotateX(1deg) rotateZ(1deg);
+		transform: rotateY(20deg) rotateX(1deg) rotateZ(1deg);
+	}
+}
+
+.TR3sto progress {
+	position: absolute;
+	transform: translate(-50%, -50%);
+	height: 30px;
+	width: 100%;
+	top: 65%;
+	left: 50%;
+	z-index: 999;
+}
+
+.TR3sto progress:before {
+	content: attr(data-label);
+	font-size: 0.8em;
+	position: absolute;
+	text-align: center;
+	top: 5px;
+	left: 0;
+	right: 0;
+}
+
+.TR3sto progress.value {
+	background-color: #7cc4ff;
+	display: inline-block;
+	height: 100%;
+}
+
+.TR3sto #gui {
+	position: absolute;
+	top: 0px;
+}
+
+.TR3sto #rendererCSS {
+	caret-color: transparent;
+	position: absolute;
+	top: 0px;
+}
+
+.TR3sto #gui-effects button:focus {
+	background-color: green;
+}
+
+.TR3sto #gui-effects button:hover {
+	background-color: green !important
+}
+
+.TR3sto .css3dDEF {
+	border: solid !important;
+}
+
+.alert-container {
+	display: none;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 300px;
+	height: auto;
+	background: rgba(200, 200, 200, 0.5);
+	transform: translate(-50%, -50%);
+}
+
+.alert-box {
+	background: white;
+	padding: 20px;
+	border-radius: 5px;
+	text-align: center;
+}
+
+.alert-box #alertMessage {
+    text-align: left !important;
+    float: left;
+}
+
+.alert-box button {
+	margin: 10px;
+	padding: 10px 20px;
+}
