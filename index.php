@@ -7,5 +7,5 @@
 	echo file_get_contents( "templates/5map.js" );
 	echo file_get_contents( "templates/6footer.js" );*/
 	
-	echo file_get_contents( "templates/7end.html" );
+	echo file_get_contents( "templates/4end.html" );
 ?>
