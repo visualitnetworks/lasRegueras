@@ -71,6 +71,7 @@
 			mode: false,
 			lang: false,
 			autostart: false,
+			lookToward: false,
 			editor: false
 		}
 
@@ -88,6 +89,9 @@
 		}
 		if (spams.has("lang") && spams.get("lang") != "") {
 			formURL.lang = spams.get("lang").toUpperCase();
+		}
+		if (spams.has("looktoward") && spams.get("looktoward") != "") {
+			formURL.lookToward = spams.get("looktoward").split(',').map(Number);
 		}
 		if (spams.get("autostart") == "true") {
 			formURL.autostart = true;
