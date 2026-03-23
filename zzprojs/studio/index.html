@@ -195,10 +195,14 @@
 
 		var formURL = {
 			model: '2425HD',
+			lookToward: false,
 		}
 
 		if (spams.has("model") && spams.get("model") != "") {
 			formURL.model = spams.get("model");
+		}
+		if (spams.has("lookToward") && spams.get("lookToward") != "") {
+			formURL.lookToward = spams.get("lookToward").split(',').map(Number);
 		}
 		var init = {
 			//pano: {type: 'cube', src: './obj3d/panos/cube', name: 'dark-s_', ext: 'jpg'}, 
@@ -228,7 +232,32 @@
 				}
 			});
 			//if (formURL.model == "mosaicoHD") { mainMesh.rotation.set(Math.PI, Math.PI / 2, 0); }
-			setTimeout(() => { TR3sto.fullScreen(true, true); orbit.maxDistance = 20; }, 500)
+			setTimeout(() => {
+				if (formURL.lookToward != false && formURL.lookToward.length > 5) {
+					var lAt = formURL.lookToward
+					camera.position.set(lAt[0], lAt[1], lAt[2]);
+					orbit.target.set(lAt[3], lAt[4], lAt[5]);
+				}
+
+				setInterval(() => {
+					var pos = camera.position;
+					var raycaster = getRayCaster(false);
+					const inter = raycaster.intersectObject(TR3sto.main3d, true);
+					var tgt = new THREE.Vector3();
+					if (inter && inter[0] && inter[0].point) {
+						tgt = inter[0].point;
+					} else {
+						tgt = orbit.target;
+					}
+
+					spams.set("lookToward", [pos.x, pos.y, pos.z, tgt.x, tgt.y, tgt.z].map(function (each_element) {
+						return Number(each_element.toFixed());
+					}));
+
+					window.history.replaceState({}, '', `${location.pathname}?${spams.toString()}`);
+				}, 2000);
+				TR3sto.fullScreen(true, true); orbit.maxDistance = 20;
+			}, 500)
 		});
 		/*TR3sto.loadObj3d('./obj3d/roman.glb', { pos: new THREE.Vector3(0, 0, 0), castShadow: true, receiveShadow: false, scale: new THREE.Vector3(1, 1, 1) }).then(function (obj3d) {
 

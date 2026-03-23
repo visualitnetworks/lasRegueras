@@ -255,9 +255,7 @@ function setItems3D() {
 		src: "source/obj3d/mosaico.glb",
 		scale: [1, 1, 1],
 		pos: [
-			-662737.724,
-			5375496.423,
-			136
+			-662737.21,5375496.30,136.00
 		],
 		//aRotate: -1.5,
 		slctItem: false
@@ -320,7 +318,38 @@ function setItems3D() {
 				ditanceTiles();
 				setTimeout(() => {
 					ditanceTiles();
+					/*if (formURL.lookToward != false && formURL.lookToward.length > 5) {
+						var lAt = formURL.lookToward
+						TR3.camera.position.set(lAt[0], lAt[1], lAt[2]);
+						TR3.controls.target.set(lAt[3], lAt[4], lAt[5]);
+					} else {
+						//var lookAt = TR3cfg.loc.lookAt;
+						//TR3.setLookAtini(lookAt[0], lookAt[1]);
+						var lookCtmP = TR3cfg.loc.lookCustom.pos;
+						TR3.camera.position.set(lookCtmP.x, lookCtmP.y, lookCtmP.z);
+						var lookCtmT = TR3cfg.loc.lookCustom.tgt;
+						TR3.controls.target.set(lookCtmT.x, lookCtmT.y, lookCtmT.z);
+					}
+		
+					setInterval(() => {
+						var pos = TR3.camera.position;
+						var raycaster = TR3.getRayCaster(false);
+						var inter = TR3.getIntersect(raycaster, [TR3cfg.tileGroup]);
+						var tgt = new THREE.Vector3();
+						if(inter && inter[0] && inter[0][0] && inter[0][0].point) {
+							tgt = inter[0][0].point;
+						} else {
+							tgt = TR3.controls.target;
+						}
+		
+						spams.set("looktoward", [pos.x, pos.y, pos.z, tgt.x, tgt.y, tgt.z].map(function (each_element) {
+							return Number(each_element.toFixed());
+						}));
+		
+						window.history.replaceState({}, '', `${location.pathname}?${spams.toString()}`);
+					}, 2000);*/
 				}, 1000);
+				
 			}
 		}, function (error) {
 

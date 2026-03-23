@@ -60,11 +60,7 @@ TR3cfg.setTR32 = function setTR32() {
 				TR3cfg.first = false;
 			};
 
-			if (formURL.lookToward != false && formURL.lookToward.length > 5) {
-				var lAt = formURL.lookToward
-				TR3.camera.position.set(lAt[0], lAt[1], lAt[2]);
-				TR3.controls.target.set(lAt[3], lAt[4], lAt[5]);
-			} else if (TR3cfg.loc.lookCustom && TR3cfg.loc.lookCustom.pos && TR3cfg.loc.lookCustom.tgt) {
+			if (TR3cfg.loc.lookCustom && TR3cfg.loc.lookCustom.pos && TR3cfg.loc.lookCustom.tgt) {
 				//var lookAt = TR3cfg.loc.lookAt;
 				//TR3.setLookAtini(lookAt[0], lookAt[1]);
 				var lookCtmP = TR3cfg.loc.lookCustom.pos;
@@ -75,27 +71,6 @@ TR3cfg.setTR32 = function setTR32() {
 				lookAtInitial();
 			}
 
-			setInterval(() => {
-				var pos = TR3.camera.position;
-				var raycaster = TR3.getRayCaster(false);
-				var inter = TR3.getIntersect(raycaster, [TR3cfg.tileGroup]);
-				var tgt = new THREE.Vector3();
-				if(inter && inter[0] && inter[0][0] && inter[0][0].point) {
-					tgt = inter[0][0].point;
-				} else {
-					tgt = TR3.controls.target;
-				}
-
-				var tgt = TR3.getIntersect(raycaster, [TR3cfg.tileGroup])[0][0].point;
-				spams.set("looktoward", [pos.x, pos.y, pos.z, tgt.x, tgt.y, tgt.z].map(function (each_element) {
-					return Number(each_element.toFixed());
-				}));
-
-				spams.set("autostart", false);
-				formURL.autostart = false;
-
-				window.history.replaceState({}, '', `${location.pathname}?${spams.toString()}`);
-			}, 2000);
 		}, 50);
 
 		//TR3.getFeatFromOL( TR3cfg.vecTrail.getSource().getFeatures(), [TR3cfg.tileGroup] );//tubeOl/lineOl
