@@ -320,13 +320,13 @@ TR3cfg.idiomax.make = function (idi, insert, includes) {
  * asociados al objeto de textos de idioma
  * 
  * @public
- * @param {string} idiom texto de idioma según el estandat, Ej: "ES" para español
+ * @param {string} idiom texto de idioma según el estandar, Ej: "ES" para español
  * @example
  * TR3cfg.idiomax.set('ES');
  * TR3cfg.idiomax.set(TR3cfg.idiomax.get());
  */
 TR3cfg.idiomax.set = function (idiom) {
-
+    //idiom = texto de idioma según el estandat, Ej: "ES" para español
     var idi = idiom || TR3cfg.idiomax.get();
     var thisIdioma = TR3cfg.idiomax.text;
     document.querySelectorAll('[idiomax]').forEach(function (el) {
@@ -337,6 +337,7 @@ TR3cfg.idiomax.set = function (idiom) {
         document.title = thisIdioma.globals_title.message[idi];
     }
 
+    //textDecoration para marcar el idioma activo en el interfaz de cambio de idioma
     var idiomaxLI = document.getElementsByClassName("idiomaxLI");
     for (let i = 0; i < idiomaxLI.length; i++) {
         idiomaxLI[i].style.textDecoration = 'none';
