@@ -337,6 +337,12 @@ TR3cfg.idiomax.set = function (idiom) {
         document.title = thisIdioma.globals_title.message[idi];
     }
 
+    var idiomaxLI = document.getElementsByClassName("idiomaxLI");
+    for (let i = 0; i < idiomaxLI.length; i++) {
+        idiomaxLI[i].style.textDecoration = 'none';
+    }
+    document.querySelector('[idiomax=idiomBtn'+idiom+']').style.textDecoration = 'underline';
+
     /*for (let i = 0; i < TR3cfg.Text2map3d.length; i++) {
         TR3.scene.remove(TR3cfg.Text2map3d[i]);
     }
